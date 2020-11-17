@@ -1,0 +1,71 @@
+/*
+Theme Name: OstEsbjerg
+Author: Team Awesome
+Version: 1.0
+*/
+
+body {
+	color: #333333;
+	font-family: arial;
+	font-size: 14px;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #0073b3;
+}
+a:hover {
+	color: #0063b3;
+}
+
+/* General layout */
+
+div.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* header */
+.site-header {
+	border-bottom: 2px solid #999;
+}
+
+/* footer */
+
+.site-footer {
+	border-top: 2px solid #999;
+}
+
+/* article */
+
+.post {
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.post:last-of-type {
+	border-bottom: none;
+}
+
+/* navigation */
+
+nav ul {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+nav ul li a:link,
+nav ul li a:visited {
+	margin-right: 10px;
+	color: #666666;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: #444444;
+	font-weight: 500;
+}
