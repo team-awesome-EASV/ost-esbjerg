@@ -120,8 +120,7 @@ div.container {
   color: #fffcf5;
   font-weight: 500;
   background-color: #ca7482;
-  border: 0.6rem #ca7482 solid;
-  border: 0.6rem #ca7482 solid;
+  border: 0.5rem #ca7482 solid;
   transition: 0.2s linear;
 }
 .site-nav .parent-link a:link, .site-nav .parent-link a:visited {
