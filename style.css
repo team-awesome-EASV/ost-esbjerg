@@ -78,16 +78,9 @@ Version: 1.0
 }
 
 /*colors*/
-html {
-  font-family: "josefin-slab", serif;
-  font-weight: 300;
-  font-size: 16px;
-  background-color: #fffcf5;
-}
-
 body {
-  color: #333333;
-  font-size: 14px;
+  color: #272f33;
+  background-color: #fffcf5;
 }
 
 h1 {
@@ -99,11 +92,11 @@ a {
 }
 
 a:link, a:visited {
-  color: #0073b3;
+  color: #a33146;
 }
 
 a:hover {
-  color: #0063b3;
+  color: #ca7482;
 }
 
 div.container {
