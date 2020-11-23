@@ -1,7 +1,4 @@
-@import './foundations';
-
-// global and typography
-
+/*colors*/
 html {
   box-sizing: border-box;
 }
@@ -13,13 +10,11 @@ html {
 }
 
 body {
-  color: $text-color;
-  background-color: $background-color;
-  margin:0;
+  color: #272f33;
+  background-color: #fffcf5;
+  margin: 0;
   padding: 0;
 }
-
-//TYPOGRAPHY
 
 h1,
 h2,
@@ -27,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $family-bodoni;
+  font-family: "bodoni-urw", serif;
 }
 
 h1 {
@@ -61,20 +56,21 @@ h6 {
 }
 
 p {
-  font-family: $family-cormorant-garamond;
-  line-height: $line-spacing-24;
+  font-family: "cormorant-garamond", serif;
+  line-height: 24px;
   font-weight: 300;
 }
 
 a {
   text-decoration: none;
-  &:link,
-  &:visited {
-    color: $logo-red;
-  }
-  &:hover {
-    color: $logo-pink;
-  }
+}
+
+a:link, a:visited {
+  color: #a33146;
+}
+
+a:hover {
+  color: #ca7482;
 }
 
 div.container {
