@@ -2,7 +2,9 @@
 
 function ostPracticeResources()
 {
+    wp_enqueue_style( 'fonts', 'https://use.typekit.net/wny5ldn.css');
     wp_enqueue_style('style', get_stylesheet_uri());
+    
 }
 
 add_action('wp_enqueue_scripts', 'ostPracticeResources');

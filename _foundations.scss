@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+//HERE WE TYPE IN ONLY VARIABLES, MIXINS ETC,
+//NO STUFF THAT COMPILES INTO CSS, so no selectors
 
 /*colors*/
 
@@ -11,8 +14,9 @@ $logo-pink: #ca7482;
 $accent-blue: #f0f7fa;
 
 // font and text size
-$family-josefin-slab: "Josefin Slab";
-$family-cormorant-garamond: "Cormorant Garamond";
+$family-josefin-slab: 'josefin-slab', serif;
+$family-cormorant-garamond: 'cormorant-garamond', serif;
+$family-bodoni: 'bodoni-urw', serif;
 $style-normal: normal;
 $style-italic: italic;
 $weight-300: 300;
