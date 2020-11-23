@@ -5,6 +5,86 @@ Version: 1.0
 */
 /*colors*/
 /*colors*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  color: #272f33;
+  background-color: #fffcf5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "bodoni-urw", serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+p {
+  font-family: "cormorant-garamond", serif;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #a33146;
+}
+
+a:hover {
+  color: #ca7482;
+}
+
+div.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*colors*/
 .site-header {
   border-bottom: 2px solid #999;
 }
@@ -55,11 +135,6 @@ Version: 1.0
 }
 
 /*colors*/
-.site-footer {
-  border-top: 2px solid #999;
-}
-
-/*colors*/
 .page h2 {
   font-size: 2.5rem;
 }
@@ -78,29 +153,7 @@ Version: 1.0
 }
 
 /*colors*/
-body {
-  color: #272f33;
-  background-color: #fffcf5;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  color: #a33146;
-}
-
-a:hover {
-  color: #ca7482;
-}
-
-div.container {
-  margin: 0 auto;
-  padding: 0 20px;
+.site-footer {
+  border-top: 2px solid #999;
 }
 /*# sourceMappingURL=style.css.map */
