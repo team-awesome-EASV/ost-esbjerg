@@ -1,0 +1,35 @@
+@import "./foundations";
+
+// global and typography
+
+html {
+	font-family: $family-josefin-slab;
+	font-weight: $weight-300;
+	font-size: $size-16;
+	background-color: $background-color;
+}
+
+body {
+	color: #333333;
+	font-family: arial;
+	font-size: 14px;
+}
+h1 {
+	font-size: 3rem;
+}
+
+a {
+	text-decoration: none;
+	&:link,
+	&:visited {
+		color: #0073b3;
+	}
+	&:hover {
+		color: #0063b3;
+	}
+}
+
+div.container {
+	margin: 0 auto;
+	padding: 0 20px;
+}

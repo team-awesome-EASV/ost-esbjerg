@@ -1,5 +1,5 @@
 <?php get_header()?>
-<main class="products">
+<main class="about">
     <?php if (have_posts()): ?>
 
     <?php while (have_posts()): the_post()?>

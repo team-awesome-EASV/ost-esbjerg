@@ -1,14 +1,4 @@
 @import "./foundations";
-a {
-	text-decoration: none;
-	&:link,
-	&:visited {
-		color: #0073b3;
-	}
-	&:hover {
-		color: #0063b3;
-	}
-}
 
 .site-nav {
 	display: flex;
