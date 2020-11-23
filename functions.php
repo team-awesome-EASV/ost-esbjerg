@@ -9,6 +9,15 @@ function ostPracticeResources()
 
 add_action('wp_enqueue_scripts', 'ostPracticeResources');
 
+function loadScripts() {
+    wp_enqueue_script( 'theme',  get_stylesheet_directory_uri() . '/scripts/theme.js',  [
+        'jquery',
+        
+      ], time(), true );
+}
+
+add_action( 'wp_enqueue_scripts', 'loadScripts' );
+
 //navigation menus
 
 function setup_menus()
