@@ -6,19 +6,22 @@ Version: 1.0
 /*colors*/
 /*colors*/
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
   color: #272f33;
   background-color: #fffcf5;
   padding: 0;
+  margin: 0;
   z-index: 98;
   position: relative;
 }
@@ -71,9 +74,11 @@ p {
 a {
   text-decoration: none;
 }
+
 a:link, a:visited {
   color: #a33146;
 }
+
 a:hover {
   color: #ca7482;
 }
@@ -88,6 +93,8 @@ div.container {
   position: fixed;
   width: 100%;
   top: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -96,20 +103,32 @@ div.container {
 }
 
 .site-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 5rem;
   width: 85%;
   z-index: 99;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .site-nav ul {
   list-style-type: none;
   text-decoration: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 .site-nav ul li a:link, .site-nav ul li a:visited {
   margin-right: 10px;
   color: #ca7482;
@@ -122,18 +141,22 @@ div.container {
   font-family: "josefin-slab", serif;
   text-transform: uppercase;
 }
+
 .site-nav ul li a:hover {
   color: #fffcf5;
   background-color: #ca7482;
   border: 0.5rem #ca7482 solid;
+  -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
+
 .site-nav .parent-link a:link, .site-nav .parent-link a:visited {
   margin-right: 10px;
   color: #666666;
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .site-nav .parent-link a:hover {
   color: #444444;
   font-weight: 500;
@@ -144,9 +167,15 @@ div.container {
   width: 8%;
   height: 100vh;
   text-orientation: sideways;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 0;
   right: 0;
   position: absolute;
@@ -155,7 +184,9 @@ div.container {
 }
 
 .find-us-banner {
-  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   font-family: "josefin-slab", serif;
   font-weight: 800;
   font-size: 3rem;
@@ -167,29 +198,56 @@ div.container {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .marquee:hover .marquee__item {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
+
 .marquee__item {
   display: inline-block;
   will-change: transform;
   margin: 1.5rem;
-  animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
+          animation: marquee 10s linear infinite;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
 }
 
 @keyframes marquee {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
+
 /*colors*/
 .page h2 {
   font-size: 2.5rem;
@@ -199,9 +257,11 @@ div.container {
 .post {
   padding: 30px 0;
 }
+
 .post h2 {
   font-size: 2rem;
 }
+
 .post:last-of-type {
   border-bottom: none;
 }
@@ -211,4 +271,272 @@ div.container {
   border-top: 2px solid #999;
 }
 
+/*colors*/
+.products {
+  top: 0;
+}
+
+.products .hero {
+  height: 100vh;
+  background-image: url("static-assets/products-min.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.products .hero .hero-text {
+  width: 80%;
+}
+
+.products .hero .hero-text h1 {
+  color: #fffcf5;
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.products .hero .hero-text .links-container {
+  color: #f0dbad;
+}
+
+.products .hero .hero-text .links-container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.products .hero .hero-text .links-container li a p {
+  font-size: 4rem;
+  color: #f0dbad;
+  font-weight: bold;
+}
+
+.products #tapas {
+  padding-top: 15rem;
+}
+
+.products #tapas .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.products #tapas .product-info .image {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.products #tapas .product-info .image h2 {
+  color: #ca7482;
+  font-size: 6rem;
+  position: absolute;
+  margin-top: 0;
+  right: 25%;
+  top: -4.5rem;
+}
+
+.products #tapas .product-info .image .product-image img {
+  width: 60%;
+  max-height: 80vh;
+}
+
+.products #tapas .product-info .image .tapas-price {
+  background-image: url("static-assets/svg/price.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 180px;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 25%;
+  bottom: 0;
+}
+
+.products #tapas .product-info .image .tapas-price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0 0 0;
+}
+
+.products #tapas .product-info .image .tapas-price div p {
+  margin: 0;
+  margin-bottom: 0.3rem;
+  color: #fffcf5;
+  font-family: "bodoni-urw", serif;
+}
+
+.products #tapas .product-info .image .tapas-price div .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.products #tapas .product-info .image .tapas-price div .currency {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.products #tapas .product-info .image .tapas-price div .extra-info {
+  font-size: 1rem;
+}
+
+.products #tapas .product-info .tapas-product-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #272f33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.products #tapas .product-info .tapas-product-text h3 {
+  color: #a33146;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.products #tapas .product-info .tapas-product-text .product-text-container {
+  font-family: "cormorant-garamond", serif;
+  font-size: 1.2rem;
+  width: 50%;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list {
+  position: relative;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list ul {
+  color: #ca7482;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li div {
+  background-color: #ca7482;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 1rem 0 0;
+  border-radius: 50%;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li p {
+  color: #272f33;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+
+.products #tapas .product-info .tapas-product-text .product-ingredients-list .tapas-line-ornament {
+  background-image: url("static-assets/svg/wine-and-grapes.svg");
+  height: 50%;
+  max-height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+}
+
+.products #tapas .product-info .tapas-product-text .contact-info p {
+  font-family: "cormorant-garamond", serif;
+  font-size: 1.2rem;
+}
+
+.products #tapas .product-info .tapas-product-text .contact-info .contact-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-radius: 2.5rem;
+  background-color: #ca7482;
+  padding: 0 1rem;
+}
+
+.products #tapas .product-info .tapas-product-text .contact-info .contact-phone div {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url("static-assets/svg/phone.svg");
+  margin-right: 1rem;
+}
+
+.products #tapas .product-info .tapas-product-text .contact-info .contact-phone .phone-number {
+  font-family: "josefin-slab", serif;
+  color: #fffcf5;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.products #tapas .product-info .tapas-product-text .contact-info .contact-phone .phone-number span {
+  margin-right: 0.2rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,201 @@
+@import "./foundations";
+
+.products {
+	top: 0;
+
+	.hero {
+		height: 100vh;
+		background-image: url("static-assets/products-min.jpg");
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+
+		.hero-text {
+			width: 80%;
+			h1 {
+				color: $background-color;
+				font-size: 8rem;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			.links-container {
+				color: $yellow-dark;
+				ul {
+					list-style-type: none;
+					display: flex;
+					justify-content: space-around;
+				}
+
+				li {
+					a {
+						p {
+							font-size: 4rem;
+							color: $yellow-dark;
+							font-weight: $weight-bold;
+						}
+					}
+				}
+			}
+		}
+	}
+	#tapas {
+		padding-top: 15rem;
+		.product-info {
+			display: flex;
+			width: 100%;
+
+			.image {
+				position: relative;
+				flex: 1;
+				h2 {
+					color: $logo-pink;
+					font-size: 6rem;
+					position: absolute;
+					margin-top: 0;
+					right: 25%;
+					top: -4.5rem;
+				}
+				.product-image {
+					img {
+						width: 60%;
+						max-height: 80vh;
+					}
+				}
+				.tapas-price {
+					background-image: url("static-assets/svg/price.svg");
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					height: 180px;
+					width: 180px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					position: absolute;
+					right: 25%;
+					bottom: 0;
+
+					div {
+						display: flex;
+						align-items: flex-start;
+						justify-content: center;
+						flex-direction: column;
+						padding: 1rem 0 0 0;
+
+						p {
+							margin: 0;
+							margin-bottom: 0.3rem;
+							color: $background-color;
+							font-family: $family-bodoni;
+						}
+						.price {
+							font-size: 2.5rem;
+							font-weight: $weight-bold;
+						}
+						.currency {
+							font-size: 2.2rem;
+							font-weight: $weight-300;
+						}
+						.extra-info {
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+			.tapas-product-text {
+				flex: 1;
+				color: $text-color;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				position: relative;
+
+				h3 {
+					color: $logo-red;
+					font-size: 3rem;
+					font-weight: 500;
+					margin-top: 0;
+				}
+				.product-text-container {
+					font-family: $family-cormorant-garamond;
+					font-size: 1.2rem;
+					width: 50%;
+				}
+				.product-ingredients-list {
+					position: relative;
+					ul {
+						color: $logo-pink;
+						list-style-type: none;
+						padding-left: 0;
+
+						li {
+							display: flex;
+							justify-content: start;
+							align-items: center;
+							flex-wrap: nowrap;
+
+							div {
+								background-color: $logo-pink;
+								height: 1rem;
+								width: 1rem;
+								margin: 0 1rem 0 0;
+								border-radius: 50%;
+							}
+							p {
+								color: $text-color;
+								font-size: 1.2rem;
+								margin: 0.2rem;
+							}
+						}
+					}
+					.tapas-line-ornament {
+						background-image: url("static-assets/svg/wine-and-grapes.svg");
+						height: 50%;
+						max-height: 300px;
+						width: 100%;
+						background-repeat: no-repeat;
+						position: absolute;
+						right: -10%;
+						bottom: 0;
+					}
+				}
+				.contact-info {
+					p {
+						font-family: $family-cormorant-garamond;
+						font-size: 1.2rem;
+					}
+
+					.contact-phone {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						flex-wrap: nowrap;
+						border-radius: 2.5rem;
+						background-color: $logo-pink;
+						padding: 0 1rem;
+
+						div {
+							height: 2.5rem;
+							width: 2.5rem;
+							background-image: url("static-assets/svg/phone.svg");
+
+							margin-right: 1rem;
+						}
+						.phone-number {
+							font-family: $family-josefin-slab;
+							color: $background-color;
+							font-size: 1.3rem;
+							font-weight: $weight-bold;
+							span {
+								margin-right: 0.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
