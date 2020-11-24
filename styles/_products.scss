@@ -3,6 +3,79 @@
 .products {
 	top: 0;
 
+	.contact-info {
+		p {
+			font-family: $family-cormorant-garamond;
+			font-size: 1.2rem;
+		}
+
+		.contact-phone {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: nowrap;
+			border-radius: 2.5rem;
+			background-color: $logo-pink;
+			padding: 0 1rem;
+
+			div {
+				height: 2.5rem;
+				width: 2.5rem;
+				background-image: url("static-assets/svg/phone.svg");
+
+				margin-right: 1rem;
+			}
+			.phone-number {
+				font-family: $family-josefin-slab;
+				color: $background-color;
+				font-size: 1.3rem;
+				font-weight: $weight-bold;
+				span {
+					margin-right: 0.2rem;
+				}
+			}
+		}
+	}
+	h3 {
+		color: $logo-red;
+		font-size: 3rem;
+		font-weight: 500;
+		margin-top: 0;
+	}
+	.product-text-container {
+		font-family: $family-cormorant-garamond;
+		font-size: 1.2rem;
+		width: 50%;
+	}
+	.product-ingredients-list {
+		position: relative;
+		ul {
+			color: $logo-pink;
+			list-style-type: none;
+			padding-left: 0;
+
+			li {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+				flex-wrap: nowrap;
+
+				div {
+					background-color: $logo-pink;
+					height: 1rem;
+					width: 1rem;
+					margin: 0 1rem 0 0;
+					border-radius: 50%;
+				}
+				p {
+					color: $text-color;
+					font-size: 1.2rem;
+					margin: 0.2rem;
+				}
+			}
+		}
+	}
+
 	.hero {
 		height: 100vh;
 		background-image: url("static-assets/products-min.jpg");
@@ -68,15 +141,15 @@
 					background-repeat: no-repeat;
 					background-size: contain;
 					background-position: center;
-					height: 180px;
-					width: 180px;
+					height: 200px;
+					width: 200px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					flex-direction: column;
 					position: absolute;
-					right: 25%;
-					bottom: 0;
+					right: 26%;
+					bottom: -5%;
 
 					div {
 						display: flex;
@@ -113,88 +186,184 @@
 				justify-content: space-between;
 				position: relative;
 
-				h3 {
-					color: $logo-red;
-					font-size: 3rem;
-					font-weight: 500;
-					margin-top: 0;
+				.tapas-line-ornament {
+					background-image: url("static-assets/svg/wine-and-grapes.svg");
+					height: 50%;
+					max-height: 300px;
+					width: 100%;
+					background-repeat: no-repeat;
+					position: absolute;
+					right: -10%;
+					bottom: 0;
 				}
-				.product-text-container {
-					font-family: $family-cormorant-garamond;
-					font-size: 1.2rem;
-					width: 50%;
-				}
-				.product-ingredients-list {
+			}
+		}
+	}
+	.product-separator-container-olives {
+		background-image: url("static-assets/svg/olives.svg");
+		height: 400px;
+		width: 60%s;
+		background-repeat: no-repeat;
+		margin-left: 4rem;
+	}
+
+	#pizzaKit {
+		width: 90%;
+		margin: 0 auto;
+		.product-info {
+			display: flex;
+			.image {
+				flex: 1;
+				.product-image-container {
 					position: relative;
-					ul {
+					h2 {
+						text-align: center;
+						margin-right: 20%;
+						margin-top: 0;
+						margin-bottom: 0;
 						color: $logo-pink;
-						list-style-type: none;
-						padding-left: 0;
-
-						li {
-							display: flex;
-							justify-content: start;
-							align-items: center;
-							flex-wrap: nowrap;
-
-							div {
-								background-color: $logo-pink;
-								height: 1rem;
-								width: 1rem;
-								margin: 0 1rem 0 0;
-								border-radius: 50%;
-							}
-							p {
-								color: $text-color;
-								font-size: 1.2rem;
-								margin: 0.2rem;
-							}
-						}
+						font-size: 6rem;
 					}
-					.tapas-line-ornament {
-						background-image: url("static-assets/svg/wine-and-grapes.svg");
-						height: 50%;
-						max-height: 300px;
-						width: 100%;
+					.pizza-triangle {
+						background-image: url("static-assets/svg/pizza-triangle.svg");
+						width: 90%;
+						height: 900px;
+						background-size: contain;
 						background-repeat: no-repeat;
 						position: absolute;
-						right: -10%;
-						bottom: 0;
+						top: -30%;
+						left: -10vw;
+						z-index: -1;
 					}
-				}
-				.contact-info {
-					p {
-						font-family: $family-cormorant-garamond;
-						font-size: 1.2rem;
+					.pizza-image {
+						img {
+							width: 80%;
+						}
 					}
-
-					.contact-phone {
+					.pizza-price {
+						background-image: url("static-assets/svg/pizza-price.svg");
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+						height: 200px;
+						width: 200px;
 						display: flex;
-						justify-content: flex-start;
+						justify-content: center;
 						align-items: center;
-						flex-wrap: nowrap;
-						border-radius: 2.5rem;
-						background-color: $logo-pink;
-						padding: 0 1rem;
+						flex-direction: column;
+						position: absolute;
+						right: 28%;
+						bottom: 10%;
 
 						div {
-							height: 2.5rem;
-							width: 2.5rem;
-							background-image: url("static-assets/svg/phone.svg");
+							display: flex;
+							align-items: flex-start;
+							justify-content: center;
+							flex-direction: column;
+							padding: 1rem 0 0 0;
 
-							margin-right: 1rem;
-						}
-						.phone-number {
-							font-family: $family-josefin-slab;
-							color: $background-color;
-							font-size: 1.3rem;
-							font-weight: $weight-bold;
-							span {
-								margin-right: 0.2rem;
+							p {
+								margin: 0;
+								margin-bottom: 0.3rem;
+								color: $background-color;
+								font-family: $family-bodoni;
+							}
+							.price {
+								font-size: 2.5rem;
+								font-weight: $weight-bold;
+							}
+							.currency {
+								font-size: 2.2rem;
+								font-weight: $weight-300;
+							}
+							.extra-info {
+								font-size: 1rem;
 							}
 						}
 					}
 				}
+			}
+			.pizza-line-ornament {
+				height: 200px;
+				width: 50%;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				background-image: url("static-assets/svg/cheese.svg");
+				margin-top: -10%;
+			}
+
+			.pizza-product-text {
+				flex: 1;
+			}
+		}
+	}
+	.product-separator-container-wine-glass {
+		height: 300px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+
+		.product-separator {
+			height: 100%;
+			width: 40%;
+			background-image: url("static-assets/svg/wine-glass.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+	}
+
+	#oster {
+		.ost-text-info {
+			display: flex;
+			justify-content: center;
+
+			.ost-text-container {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 30%;
+				height: 250px;
+				padding-left: 5%;
+				.round-ornament {
+					background-color: $yellow-dark;
+					height: 250px;
+					width: 250px;
+					border-radius: 50%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+				}
+				h2 {
+					position: relative;
+					z-index: 2;
+					color: $logo-red;
+					margin-bottom: 0;
+				}
+				p {
+					position: relative;
+					z-index: 2;
+					color: $text-color;
+					margin-top: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		.image-container {
+			display: flex;
+			width: 90%;
+			justify-content: space-around;
+
+			img {
+				width: 40%;
+			}
+			.portrait {
+				width: 50%;
 			}
 		}
 	}
