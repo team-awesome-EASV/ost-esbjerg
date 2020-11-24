@@ -1,7 +1,7 @@
 <footer class="site-footer">
     
         <h4>Undersider</h4>
-        <h4 id:"footer:">Åbningstider</h4>
+        <h4>Åbningstider</h4>
             <p>Man - Fre: 10:00 - 17:00</p>
             <p>Lør: 09:00 - 13:00</p>
             <p>Søn: Lukket</p>
