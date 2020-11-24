@@ -1,7 +1,10 @@
 @import './foundations';
 
 .site-header {
-  width:100%;
+  position: fixed;
+  width: 100%;
+  top:0rem;
+  display: flex;
 }
 
 .nav-logo {
@@ -12,6 +15,8 @@
   display: flex;
   align-items: center;
   height:5rem;
+  width:85%;
+  z-index: 99;
   justify-content:space-between;
 
   ul {
@@ -27,7 +32,7 @@
         &:visited {
 		      margin-right: 10px;
           color:$logo-pink;
-          font-weight: 500;
+          font-weight: 600;
           font-size:1.3rem;
           background-color:$background-color;
           border-radius:10px;
@@ -39,7 +44,6 @@
 
         &:hover {
           color: $background-color;
-          font-weight: 500;
           background-color: $logo-pink;
           border:0.5rem $logo-pink solid;
           transition: 0.2s linear;
@@ -65,3 +69,56 @@
     }
   }
 }
+
+.find-us-wrapper{
+  background-color:$accent-blue;
+  width:8%;
+  height:100vh;
+  text-orientation: sideways;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:0;
+  right:0;
+  position: absolute;
+  position: fixed;
+  z-index: 1;
+  // transform: translate(171vh,-4vh);
+}
+
+.find-us-banner{
+  writing-mode: vertical-rl;
+  font-family: $family-josefin-slab;
+  font-weight:800;
+  font-size:3rem;
+  color: whitesmoke;
+  margin:0;
+}
+
+$speed: 10s;
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  &:hover &__item { animation-play-state: paused; }
+  
+  
+  &__item {
+    display: inline-block;
+    will-change: transform;
+    margin:1.5rem;
+    animation: marquee $speed linear infinite;
+  }
+}
+
+@keyframes marquee {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+

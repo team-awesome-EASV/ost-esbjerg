@@ -24,5 +24,6 @@
     </div>
 
     <?php endif;?>
+    <button>sudo</button>
 </main>
 <?php get_footer()?>
