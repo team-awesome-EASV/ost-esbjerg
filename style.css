@@ -319,6 +319,71 @@ div.container {
 .products {
   top: 0;
 }
+.products .contact-info p {
+  font-family: "cormorant-garamond", serif;
+  font-size: 1.2rem;
+}
+.products .contact-info .contact-phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 2.5rem;
+  background-color: #ca7482;
+  padding: 0 1rem;
+}
+.products .contact-info .contact-phone div {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-image: url("static-assets/svg/phone.svg");
+  margin-right: 1rem;
+}
+.products .contact-info .contact-phone .phone-number {
+  font-family: "josefin-slab", serif;
+  color: #fffcf5;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.products .contact-info .contact-phone .phone-number span {
+  margin-right: 0.2rem;
+}
+.products h3 {
+  color: #a33146;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+.products .product-text-container {
+  font-family: "cormorant-garamond", serif;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.products .product-ingredients-list {
+  position: relative;
+}
+.products .product-ingredients-list ul {
+  color: #ca7482;
+  list-style-type: none;
+  padding-left: 0;
+}
+.products .product-ingredients-list ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.products .product-ingredients-list ul li div {
+  background-color: #ca7482;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 1rem 0 0;
+  border-radius: 50%;
+}
+.products .product-ingredients-list ul li p {
+  color: #272f33;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
 .products .hero {
   height: 100vh;
   background-image: url("static-assets/products-min.jpg");
@@ -378,15 +443,15 @@ div.container {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
-  right: 25%;
-  bottom: 0;
+  right: 26%;
+  bottom: -5%;
 }
 .products #tapas .product-info .image .tapas-price div {
   display: flex;
@@ -420,44 +485,7 @@ div.container {
   justify-content: space-between;
   position: relative;
 }
-.products #tapas .product-info .tapas-product-text h3 {
-  color: #a33146;
-  font-size: 3rem;
-  font-weight: 500;
-  margin-top: 0;
-}
-.products #tapas .product-info .tapas-product-text .product-text-container {
-  font-family: "cormorant-garamond", serif;
-  font-size: 1.2rem;
-  width: 50%;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list {
-  position: relative;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list ul {
-  color: #ca7482;
-  list-style-type: none;
-  padding-left: 0;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li div {
-  background-color: #ca7482;
-  height: 1rem;
-  width: 1rem;
-  margin: 0 1rem 0 0;
-  border-radius: 50%;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list ul li p {
-  color: #272f33;
-  font-size: 1.2rem;
-  margin: 0.2rem;
-}
-.products #tapas .product-info .tapas-product-text .product-ingredients-list .tapas-line-ornament {
+.products #tapas .product-info .tapas-product-text .tapas-line-ornament {
   background-image: url("static-assets/svg/wine-and-grapes.svg");
   height: 50%;
   max-height: 300px;
@@ -467,33 +495,160 @@ div.container {
   right: -10%;
   bottom: 0;
 }
-.products #tapas .product-info .tapas-product-text .contact-info p {
-  font-family: "cormorant-garamond", serif;
-  font-size: 1.2rem;
+.products .product-separator-container-olives {
+  background-image: url("static-assets/svg/olives.svg");
+  height: 400px;
+  width: 60% s;
+  background-repeat: no-repeat;
+  margin-left: 4rem;
 }
-.products #tapas .product-info .tapas-product-text .contact-info .contact-phone {
+.products #pizzaKit {
+  width: 90%;
+  margin: 0 auto;
+}
+.products #pizzaKit .product-info {
   display: flex;
-  justify-content: flex-start;
+}
+.products #pizzaKit .product-info .image {
+  flex: 1;
+}
+.products #pizzaKit .product-info .image .product-image-container {
+  position: relative;
+}
+.products #pizzaKit .product-info .image .product-image-container h2 {
+  text-align: center;
+  margin-right: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ca7482;
+  font-size: 6rem;
+}
+.products #pizzaKit .product-info .image .product-image-container .pizza-triangle {
+  background-image: url("static-assets/svg/pizza-triangle.svg");
+  width: 90%;
+  height: 900px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30%;
+  left: -10vw;
+  z-index: -1;
+}
+.products #pizzaKit .product-info .image .product-image-container .pizza-image img {
+  width: 80%;
+}
+.products #pizzaKit .product-info .image .product-image-container .pizza-price {
+  background-image: url("static-assets/svg/pizza-price.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
-  border-radius: 2.5rem;
-  background-color: #ca7482;
-  padding: 0 1rem;
+  flex-direction: column;
+  position: absolute;
+  right: 28%;
+  bottom: 10%;
 }
-.products #tapas .product-info .tapas-product-text .contact-info .contact-phone div {
-  height: 2.5rem;
-  width: 2.5rem;
-  background-image: url("static-assets/svg/phone.svg");
-  margin-right: 1rem;
+.products #pizzaKit .product-info .image .product-image-container .pizza-price div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0 0 0;
 }
-.products #tapas .product-info .tapas-product-text .contact-info .contact-phone .phone-number {
-  font-family: "josefin-slab", serif;
+.products #pizzaKit .product-info .image .product-image-container .pizza-price div p {
+  margin: 0;
+  margin-bottom: 0.3rem;
   color: #fffcf5;
-  font-size: 1.3rem;
+  font-family: "bodoni-urw", serif;
+}
+.products #pizzaKit .product-info .image .product-image-container .pizza-price div .price {
+  font-size: 2.5rem;
   font-weight: bold;
 }
-.products #tapas .product-info .tapas-product-text .contact-info .contact-phone .phone-number span {
-  margin-right: 0.2rem;
+.products #pizzaKit .product-info .image .product-image-container .pizza-price div .currency {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.products #pizzaKit .product-info .image .product-image-container .pizza-price div .extra-info {
+  font-size: 1rem;
+}
+.products #pizzaKit .product-info .pizza-line-ornament {
+  height: 200px;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("static-assets/svg/cheese.svg");
+  margin-top: -10%;
+}
+.products #pizzaKit .product-info .pizza-product-text {
+  flex: 1;
+}
+.products .product-separator-container-wine-glass {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.products .product-separator-container-wine-glass .product-separator {
+  height: 100%;
+  width: 40%;
+  background-image: url("static-assets/svg/wine-glass.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.products #oster .ost-text-info {
+  display: flex;
+  justify-content: center;
+}
+.products #oster .ost-text-info .ost-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 250px;
+  padding-left: 5%;
+}
+.products #oster .ost-text-info .ost-text-container .round-ornament {
+  background-color: #f0dbad;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.products #oster .ost-text-info .ost-text-container h2 {
+  position: relative;
+  z-index: 2;
+  color: #a33146;
+  margin-bottom: 0;
+}
+.products #oster .ost-text-info .ost-text-container p {
+  position: relative;
+  z-index: 2;
+  color: #272f33;
+  margin-top: 0;
+  width: 100%;
+}
+.products #oster .image-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.products #oster .image-container img {
+  width: 40%;
+}
+.products #oster .image-container .portrait {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -108,8 +108,6 @@
 
         </article>
         <div class="product-separator-container-olives">
-            <div class="product-separator">
-            </div>
         </div>
         <article id="pizzaKit">
             <div class="product-info">
@@ -118,7 +116,8 @@
                         <h2>Pizza Kit</h2>
                         <div class="pizza-triangle"></div>
                         <div class="pizza-image">
-                            <img src="" alt="image representing a beaked pizza" title="pizza kit">
+                            <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/pizza.png"
+                                alt="image representing a beaked pizza" title="pizza kit">
                         </div>
                         <div class="pizza-price">
                             <div>
@@ -142,20 +141,40 @@
                         <h3>Indenholder</h3>
                         <ul>
 
-                            <li>Pizzadej lavet på surdej</li>
-                            <li>Hjemmelavet tomatsovs</li>
-                            <li>Mozzarella</li>
-                            <li>Charcuterie</li>
+                            <li>
+                                <div></div>
+                                <p>Pizzadej lavet på surdej</p>
+                            </li>
+                            <li>
+                                <div></div>
+                                <p>Hjemmelavet tomatsovs</p>
+                            </li>
+                            <li>
+                                <div></div>
+                                <p>Mozzarella</p>
+                            </li>
+                            <li>
+                                <div></div>
+                                <p>Charcuterie</p>
+                            </li>
 
                         </ul>
 
                     </div>
                     <div class="contact-info">
                         <p>Place din order her</p>
-                        <div class="contact-phone">
-                            <i></i>
-                            <p class="phone-number">+ 45 75 12 20 57</p>
-                        </div>
+                        <button class="contact-phone" title="call 004575122057 to place your order">
+                            <div></div>
+                            <p class="phone-number">
+
+                                <span>+</span>
+                                <span>45</span>
+                                <span>75</span>
+                                <span>12</span>
+                                <span>20</span>
+                                <span>57</span>
+                            </p>
+                        </button>
                     </div>
                 </section>
             </div>
@@ -166,17 +185,24 @@
         </div>
         <article id="oster">
             <div class="ost-text-info">
-                <div class="round-ornament"></div>
-                <h2>Bred vifte af oste</h2>
-                <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
-                    Du køber en kit fra os, som du selv kan lave. Vi har instruktionelle videoer hernede.
-                    Gerne ordr fremadrettet, sådan så vi kan forberede din kit</p>
+                <div class="ost-text-container">
+                    <div>
+                        <div class="round-ornament"></div>
+                        <h2>Bred vifte af oste</h2>
+                        <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
+                            Du køber en kit fra os, som du selv kan lave. Vi har instruktionelle videoer hernede.
+                            Gerne ordr fremadrettet, sådan så vi kan forberede din kit</p>
+                    </div>
+                </div>
+
             </div>
             <div class="round-cheese-line-ornament"></div>
             <div class="image-container">
-                <img class="portrait" src="" alt="image of the cheese shop OstEsbjerg and its owner Katherine"
+                <img class="portrait"
+                    src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/cheese-one.jpg" alt=""
                     title="cheese shop image">
-                <img class="landscape" src="" alt="image of the cheese shop OstEsbjerg display">
+                <img class="landscape"
+                    src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/outside-in.jpg" alt="">
             </div>
             <div class="about-section-one">
                 <img src="" alt="Image of Katherine cutting cheese">
