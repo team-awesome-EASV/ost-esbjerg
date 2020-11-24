@@ -35,6 +35,11 @@ function mobile_nav_menu_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mobile_nav_menu_scripts' );
 
+
+add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
+ 
+
+
 function get_top_ancestor_id()
 {
 

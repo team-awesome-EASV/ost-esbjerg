@@ -5,6 +5,7 @@
         <meta charset="<?php bloginfo('charset');?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?php bloginfo("name");?></title>
+        <script src="https://kit.fontawesome.com/e28e20b6d7.js" crossorigin="anonymous"></script>
         <?php wp_head();?>
     </head>
 
@@ -19,6 +20,14 @@
             <nav class="mobile-menu">
                     <div class="mobile-nav-container">
                         <?php wp_nav_menu(array("theme_location" => "mobile_menu"))?>
+                        <div class="social-icons-mobile">
+                        <a href="https://www.instagram.com/ost.esbjerg/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ost.esbjerg">
+                            <i class="fab fa-facebook-square" ></i>
+                        </a>
+                        </div>
                     </div>
             </nav>
             <div class="find-us-wrapper">
@@ -43,4 +52,16 @@
                     <span class="find-us-banner marquee__item">FIND US</span>
                 </div>
             </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ost.esbjerg/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/ost.esbjerg">
+                    <i class="fab fa-facebook-square" ></i>
+                </a>
+            </div>
+
+            
+            
             

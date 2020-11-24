@@ -138,6 +138,25 @@ $speed: 10s;
   }
 }
 
+.social-icons{
+  position:absolute;
+  bottom:0;
+  left:0;
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:20vh;
+  height:10vh;
+}
+
+.fab {
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: $logo-pink;
+}
+
+
 @keyframes marquee {
     0%   { transform: translateY(0); }
     100% { transform: translateY(-100%); }
@@ -160,7 +179,6 @@ $speed: 10s;
       width:100vh;
       height:100vh;
       background-color: red;
-      z-index: 99;
       display: inline-block;
     }
 
@@ -173,6 +191,7 @@ $speed: 10s;
       align-items:center;
       flex-direction:column;
       position:fixed;
+      z-index: 98;
       top:0;
   
     }
@@ -184,18 +203,19 @@ $speed: 10s;
     }
 
     .site-nav {
-      height:3.5rem;
-      width:95%;
+      height: 3.5rem;
+      width: 95%;
     } 
 
-    .toggle-nav-icon{
-      display:inline-block;
-      font-size:1.7rem;
+    .toggle-nav-icon {
+      display: inline-block;
+      font-size: 1.7rem;
       transition: color linear 0.15s;
       background-color: $background-color;
-      border:4px $background-color solid;
-      border-radius:8px;
-      z-index:80;
+      border: 4px $background-color solid;
+      border-radius: 8px;
+      z-index: 80;
+      
     }
 
     .nav-menu{
@@ -203,33 +223,61 @@ $speed: 10s;
     }
 
     .menu-mobile-menu-container {
-       display:flex;
-       flex-direction:column;
-       align-items:center;
-       justify-content:center;
-       margin:0;
-      padding:0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+       padding: 0;
     }
 
      #menu-mobile-menu {
-      list-style:none;
-      margin:0;
-      padding:0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    #menu-item-39, #menu-item-40,  #menu-item-41, #menu-item-42{
+    #menu-item-39, #menu-item-40,  #menu-item-41, #menu-item-42 {
       margin:1rem;
     }
 
-    .menu-item a{
-      font-family:$family-josefin-slab;
-      font-size:1.8rem;
+    .menu-item a {
+      font-family: $family-josefin-slab;
+      font-size: 1.8rem;
       text-transform: uppercase;
-      margin:0;
+      margin: 0;
     }
 
-    .find-us-wrapper{
+
+    .find-us-wrapper {
       display: none;
+    }
+
+    .social-icons-mobile {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      width: 20vh;
+      height: 10vh;
+      margin-left:1rem;
+    }
+
+    .social-icons {
+      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icons{
+      display:none;
+    }
+
+    .fab {
+      font-size: 2.3rem;
+      margin: 0.5rem;
+      color: $logo-pink;
     }
 
 }
