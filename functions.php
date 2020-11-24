@@ -23,9 +23,17 @@ add_action( 'wp_enqueue_scripts', 'loadScripts' );
 function setup_menus()
 {
     register_nav_menu("header_menu", __("Header menu"));
-}
+    register_nav_menu("mobile_menu", __("Mobile menu"));
 
+}
 add_action("init", "setup_menus");
+
+function mobile_nav_menu_scripts() {
+     
+    wp_enqueue_script( 'mobile-nav-script', get_stylesheet_directory_uri() . '/scripts/mobile-nav.js', array( 'jquery' ) );
+  
+}
+add_action( 'wp_enqueue_scripts', 'mobile_nav_menu_scripts' );
 
 function get_top_ancestor_id()
 {
