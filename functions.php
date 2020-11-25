@@ -38,7 +38,55 @@ add_action( 'wp_enqueue_scripts', 'mobile_nav_menu_scripts' );
 
 //add_action( 'wp_enqueue_scripts', 'add_font_awesome' );
  
+function setup_field_groups() {
+    if( function_exists('acf_add_local_field_group') ):
 
+        acf_add_local_field_group(array(
+            'key' => 'group_5fbe814d3d5e1',
+            'title' => 'Posts',
+            'fields' => array(
+                array(
+                    'key' => 'field_5fbe8175631d7',
+                    'label' => 'sub header',
+                    'name' => 'sub_header',
+                    'type' => 'text',
+                    'instructions' => 'Write 3-4 sentences, summing up the post.',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt, ut labore et dolore magna aliqua.',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => 120,
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'post_type',
+                        'operator' => '==',
+                        'value' => 'post',
+                    ),
+                ),
+            ),
+            'menu_order' => 0,
+            'position' => 'acf_after_title',
+            'style' => 'default',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => '',
+            'active' => true,
+            'description' => '',
+        ));
+        
+        endif;
+}
+add_action("acf/init", "setup_field_groups");
 
 function get_top_ancestor_id()
 {
