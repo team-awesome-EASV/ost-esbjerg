@@ -196,27 +196,29 @@
                 </div>
 
             </div>
-            <div class="round-cheese-line-ornament"></div>
+
             <div class="image-container">
+                <div class="round-cheese-line-ornament"></div>
                 <img class="portrait"
-                    src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/cheese-one.jpg" alt=""
-                    title="cheese shop image">
+                    src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/cheese-one-portrait.jpg"
+                    alt="" title="cheese shop image">
                 <img class="landscape"
                     src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/outside-in.jpg" alt="">
             </div>
-            <div class="about-section-one">
-                <img src="" alt="Image of Katherine cutting cheese">
+            <div class="about-section-one image-first">
+                <img src="<?php echo get_bloginfo( "template_directory"); ?>/static-assets/blue-cheese.jpg"
+                    alt="Image of blue-cheese">
                 <section class="about-text-one">
                     <h3>Lorem ipsum </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam voluptatem illum eveniet
                         pariatur dolore, consectetur delectus illo ut. Quidem corporis explicabo officia possimus quae
                         iure debitis voluptatem commodi eius!</p>
                 </section>
-                <div class="cheese-slice-line-ornament-container">
-                    <div class="cheese-slice-line-ornament-container"></div>
-                </div>
+
+                <div class="cheese-slice-line-ornament-container"></div>
+                \
             </div>
-            <div class="about-section-one">
+            <div class="about-section-one image-second">
 
                 <section class="about-text-one">
                     <h3>Lorem ipsum </h3>
@@ -225,15 +227,18 @@
                         iure debitis voluptatem commodi eius!</p>
                 </section>
 
-                <div class="multiple-line-ornament-container">
-                    <div class="multiple-line-ornament-container"></div>
-                </div>
-                <img src="" alt="Image of Katherine in the shop">
+                <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/cheese-three.jpg"
+                    alt="view from outside the shop">
             </div>
+            <div class="multiple-line-ornament-container"></div>
+
 
         </article>
 
     </section>
-    <h2>Vi inviterer dig hjerteligt!</h2>
+    <div class="invite">
+        <h2>Vi inviterer dig hjerteligt!</h2>
+    </div>
+
 </main>
 <?php get_footer()?>
