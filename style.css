@@ -428,18 +428,18 @@ div.container {
 
 /*colors*/
 .news {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
   margin-top: 4rem;
 }
 
 .post {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 85vh;
-  margin: 2.5rem 0;
+  margin: 3rem 0;
   background-color: hotpink;
 }
 
@@ -468,6 +468,21 @@ div.container {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.post__content__ornament {
+  height: 20%;
+}
+
+.post__content__ornament svg {
+  height: 100%;
+}
+
+.post__content__ornament .cls-1 {
+  stroke: ivory;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4px;
 }
 
 /*colors*/

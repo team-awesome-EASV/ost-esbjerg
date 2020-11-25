@@ -71,3 +71,16 @@ function get_first_image() {
     }
     return $first_img;
   }
+
+  function random_ornament() {
+      $random =get_template_directory_uri() .'/static-assets/svg/rando/'. rand(1,7) . '.svg';
+      return $random;
+
+  }
+
+  function random_inline_svg() {
+      $random_svg = rand(1,6) . '.svg';
+      return $random_svg;
+  }
+
+  ?>
