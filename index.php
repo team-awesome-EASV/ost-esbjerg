@@ -19,7 +19,8 @@ get_header()
                 <h3><?php the_field('sub_header'); ?></h3>
                 <?php endif; ?>
                 <span class="post__content__date"><?php the_author()?> @ <?php the_date()?> </span>
-                <p><?php echo wp_strip_all_tags( get_the_content() );?></p>
+                <p><?php echo strip_shortcodes(wp_trim_words( get_the_content(), 50 )); ?></p>
+                <a href="<?php the_permalink()?>"><button>Mere...</button></a>
                 <div class="post__content__ornament" >
                 <?php get_template_part( 'inline-svg-rando/inline', random_inline_svg() ) ?>
                 </div>
