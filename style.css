@@ -924,6 +924,7 @@ div.container {
   color: #272f33;
   margin-top: 0;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .products #oster .image-container {
@@ -993,6 +994,10 @@ div.container {
 
 .products #oster .about-section-one .about-text-one h3 {
   margin-bottom: 0;
+}
+
+.products #oster .about-section-one .about-text-one p {
+  font-size: 1.2rem;
 }
 
 .products #oster .image-second {
