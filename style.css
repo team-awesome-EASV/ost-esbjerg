@@ -427,8 +427,20 @@ div.container {
 }
 
 /*colors*/
+.news {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
 .post {
-  padding: 30px 0;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  margin: 2.5rem 0;
+  background-color: hotpink;
 }
 
 .post h2 {
@@ -437,6 +449,25 @@ div.container {
 
 .post:last-of-type {
   border-bottom: none;
+}
+
+.post__img {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.post__content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*colors*/
