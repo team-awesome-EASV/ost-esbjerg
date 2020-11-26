@@ -1,0 +1,62 @@
+.about {
+	padding-right: 8%;
+
+	.hero {
+		background-image: url("static-assets/shop-min.jpg");
+		height: 100vh;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		.olive-artwork {
+			height: 350px;
+			width: 350px;
+			background-image: url("static-assets/svg/olives.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			transform: rotateY(180deg);
+			position: absolute;
+			left: -3%;
+			top: -10%;
+		}
+
+		.cheese-wheel-artwork {
+			height: 350px;
+			width: 350px;
+			background-image: url("static-assets/svg/cheese-roll.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			transform: rotateY(180deg);
+			position: absolute;
+			right: 0;
+			top: -8%;
+		}
+		.multi-elements-artwork {
+			height: 300px;
+			width: 700px;
+			background-image: url("static-assets/svg/multi-element.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: bottom;
+			position: absolute;
+			bottom: 15%;
+			left: 10%;
+		}
+
+		.chevron-down {
+			background-image: url("static-assets/svg/chevron-down.svg");
+			height: 40px;
+			width: 40px;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
