@@ -1,5 +1,5 @@
 <footer class="site-footer">
-    <div>
+    <div class="nav-menu"><?php wp_nav_menu(array("theme_location" => "header_menu"))?></div>>
         <ul>Undersider</ul>
             <li>Hjem</li>
             <li>Produkter</li>

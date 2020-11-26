@@ -1,5 +1,5 @@
  <?php get_header()?>
- <main>
+ <main class="single">
 
      <?php if (have_posts()): ?>
 
