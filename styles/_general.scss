@@ -71,6 +71,7 @@ p {
 
 a {
   text-decoration: none;
+
   &:link,
   &:visited {
     color: $logo-red;
@@ -83,4 +84,13 @@ a {
 div.container {
   margin: 0 auto;
   padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
 }
