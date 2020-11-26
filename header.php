@@ -13,7 +13,9 @@
             <header class="site-header">
                 <nav class="site-nav">
                     <img class="nav-logo" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/OSTLOGO.png" alt="">
-                   <div class="nav-menu"><?php wp_nav_menu(array("theme_location" => "header_menu"))?></div> 
+                   <div class="nav-menu">
+                        <?php wp_nav_menu(array("theme_location" => "header_menu"))?>
+                   </div> 
                     <a class="toggle-nav-icon" href="#">&#9776;</a>
                 </nav>
             </header>
