@@ -82,7 +82,7 @@ a:hover {
 
 div.container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 ul {
@@ -354,6 +354,204 @@ li {
 /*colors*/
 .page h2 {
   font-size: 2.5rem;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.home-page-section {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.left-wrapper {
+  width: 40%;
+  height: 100%;
+  background-image: url("static-assets/homepage-pic.jpg");
+  background-size: cover;
+}
+
+.right-wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-illu {
+  margin: 5rem;
+}
+
+.olives-ornament {
+  background-image: url("static-assets/svg/olives.svg");
+  height: 400px;
+  width: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 20%;
+  top: -3%;
+}
+
+.info-page-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cheese-illu-wrapper {
+  background-image: url("static-assets/svg/cheese-roll.svg");
+  height: 300px;
+  width: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 105vh;
+  left: 100px;
+}
+
+.circle-banner-1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #deeff5;
+  right: 310px;
+  top: 125vh;
+  z-index: 80;
+}
+
+.circle-banner-2 {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  left: 380px;
+  top: 145vh;
+  position: absolute;
+  background-color: #f7e7c3;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #a33146;
+  font-size: 4rem;
+}
+
+p {
+  color: #272f33;
+  z-index: 82;
+}
+
+button {
+  color: #fffcf5;
+  font-weight: 600;
+  font-size: 1.3rem;
+  background-color: #ca7482;
+  border-radius: 10px;
+  border: 0.7rem #ca7482 solid;
+  margin-top: 1rem;
+  font-family: "josefin-slab", serif;
+  text-transform: uppercase;
+}
+
+.illu-container {
+  background-image: url("static-assets/svg/multi-element.svg");
+  height: 250px;
+  width: 40%;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+}
+
+.video-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.location-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-holder {
+  width: 70%;
+  height: 70vh;
+  margin-right: 15vh;
+}
+
+.row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 33%;
+  height: 100%;
+}
+
+.map {
+  background-image: url("static-assets/ost-map.png");
+  background-size: cover;
+}
+
+.graphic1 {
+  background-color: #ca7482;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.olives-illu {
+  background-image: url("static-assets/svg/olives-2.svg");
+  height: 200px;
+  width: 65%;
+  background-repeat: no-repeat;
+}
+
+.graphic2 {
+  background-color: #deeff5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cheese-illu {
+  background-image: url("static-assets/svg/cheese-2.svg");
+  height: 200px;
+  width: 65%;
+  background-repeat: no-repeat;
+}
+
+.address {
+  background-color: #f7e7c3;
 }
 
 /*colors*/
@@ -767,7 +965,7 @@ li {
 .products .product-separator-container-olives {
   background-image: url("static-assets/svg/olives.svg");
   height: 400px;
-  width: 60% s;
+  width: 60%;
   background-repeat: no-repeat;
   margin-left: 4rem;
 }
