@@ -520,11 +520,6 @@ button {
   height: 100%;
 }
 
-.map {
-  background-image: url("static-assets/ost-map.png");
-  background-size: cover;
-}
-
 .graphic1 {
   background-color: #ca7482;
   display: flex;
@@ -574,6 +569,7 @@ button {
   height: 100vh;
   display: flex;
   position: relative;
+  z-index: 50;
 }
 .news__hero a {
   font-family: "cormorant-garamond", serif;
