@@ -58,7 +58,7 @@ get_header()
                         <div class="cheese-illu"></div>
                     </div>
                     <div class="content-wrapper address">
-                        <!-- map -->
+                        <img class="address-info" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/location-info.png" alt="">
                     </div>
                     <div class="content-wrapper image2">
                         <!-- image --> 

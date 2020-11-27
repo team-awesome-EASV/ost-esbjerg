@@ -36,7 +36,8 @@
 }
 
 .home-illu {
-	margin:5rem;
+	margin:10rem;
+	width:70%;
 }
 
 .olives-ornament {
@@ -88,8 +89,8 @@
 	top: 145vh;
 	position:absolute;
 	background-color: $yellow-light;
+	z-index: 87;
 } 
-
 
 
 .info-container {
@@ -118,7 +119,7 @@ h1 {
 p {
 	color: $text-color;
 	$family-cormorant-garamond: "cormorant-garamond", serif;
-	z-index: 82;
+	z-index: 89;
 }
 
 button {
@@ -210,6 +211,13 @@ button {
 
 .address{
 	background-color: $yellow-light;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.address-info {
+	width:60%;
 }
 
 

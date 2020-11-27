@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
     }); 
 
     jQuery('.toggle-nav-icon').click(function(e) {
-        jQuery('ul' ).slideToggle(400);
+        jQuery('#menu-mobile-menu' ).slideToggle(400);
   
         e.preventDefault();
     }); 
