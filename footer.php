@@ -31,7 +31,7 @@
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> Torvegade 38 6700, Esbjerg</li>
                     <li><i class="fas fa-phone-alt"></i> +45 75 12 20 57</li>
-                    <li><i class="fas fa-envelope"></i> kontakt@ostesbjerg.dk</li>
+                    <li><i class="fas fa-envelope"></i> <a target="_top" href="mailto:kontakt@ostesbjerg.dk">kontakt@ostesbjerg.dk</a></li>
                 </ul>
             </div>
         </div>
