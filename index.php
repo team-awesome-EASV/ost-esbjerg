@@ -5,6 +5,7 @@ get_header()
 
 <main class="news">
 
+
     <div class="news__hero">
         <div class="news__hero__picture" style="background-image: url(<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/news-titile-pic.jpg);"></div>
 
@@ -17,7 +18,10 @@ get_header()
                 <h1>Nyheder</h1>
                 <ul class="hero__recent_posts">
                     <?php
-                        $recent_posts = wp_get_recent_posts();
+                        $recent_posts = wp_get_recent_posts(array(
+                            'numberposts' => 5, // Number of recent posts thumbnails to display
+                            'post_status' => 'publish' // Show only the published posts
+                        ));
                         foreach( $recent_posts as $recent ) {
                             printf( '<li><a href="%1$s">%2$s</a></li>',
                                 esc_url( get_permalink( $recent['ID'] ) ),

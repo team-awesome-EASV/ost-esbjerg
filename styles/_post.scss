@@ -3,15 +3,19 @@
   width: 100%;
   margin: 0 auto;
 
-  a {
-    font-family: $family-cormorant-garamond;
-  }
-
   &__hero {
     width: 100%;
     height: 100vh;
     display: flex;
     position: relative;
+
+    a {
+      font-family: $family-cormorant-garamond;
+
+      h2 {
+        font-family: $family-bodoni;
+      }
+    }
 
     &__picture {
       width: 40%;

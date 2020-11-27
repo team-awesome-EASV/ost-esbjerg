@@ -1,5 +1,107 @@
-@import "./foundations";
+@import './foundations';
 
-.site-footer {
-	border-top: 2px solid #999;
+.footer {
+  background-color: $accent-blue;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+
+  p {
+    margin: 0;
+    text-align: center;
+    font-family: $family-josefin-slab;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__container-logo {
+    width: 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__container-info {
+    font-family: $family-josefin-slab;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__section {
+    color: $logo-red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    i {
+      padding-right: 0.5em;
+    }
+
+    &__header {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1000px) {
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+
+    &-info {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &-logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 1em 0;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+
+    &-info {
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    &-logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 1em 0;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .footer__section {
+    align-items: center;
+    margin: 1em 0;
+  }
 }
