@@ -6,14 +6,16 @@ get_header()
 
         <div class="home-page-section">
             <div class="left-wrapper">
-                <!-- picture -->
+                 <!-- image set in scss--> 
             </div>
 
             <div class="right-wrapper">
-                <div class="olives-ornament"><!-- olives ornament on the top --></div> 
+                <div class="olives-ornament"><!-- olives ornament on the top set in css --></div> 
                 <img class="home-illu" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/homepage-illu.png" alt="">
             </div>
         </div>
+
+        <div class="white-space"></div>
 
         <div class="info-page-section">
             <div class="cheese-illu-wrapper"></div>
@@ -31,7 +33,7 @@ get_header()
                     </p>
                     <button>Check it out!</button>
                 </div>
-                <div class="illu-container">  <!-- fine dining illu --> </div>
+                <div class="illu-container">  <!-- fine dining illu set in scss --> </div>
             </div>
         </div>
 
@@ -43,7 +45,7 @@ get_header()
             <div class="content-holder">
                 <div class="row">
                     <div class="content-wrapper image1">
-                        <!-- image -->
+                         <!-- image set in scss--> 
                     </div>
                     <div class="content-wrapper map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6505149517143!2d8.450391216006912!3d55.46875902133027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21e03f334f17%3A0x64c76bb2fb9f8e03!2sOst%20ApS!5e0!3m2!1spl!2sdk!4v1606490268079!5m2!1spl!2sdk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -58,10 +60,20 @@ get_header()
                         <div class="cheese-illu"></div>
                     </div>
                     <div class="content-wrapper address">
-                        <img class="address-info" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/location-info.png" alt="">
+                        <div class="text-holder">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                              <p>Torvegade 38</p>
+                              <p>6700, Esbjerg</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <i class="fas fa-phone"></i>
+                            <p>+48 75 12 20 57</p>
+                        </div>
                     </div>
                     <div class="content-wrapper image2">
-                        <!-- image --> 
+                        <!-- image set in scss--> 
                     </div>
                 </div>
             </div>
