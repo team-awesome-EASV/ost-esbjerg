@@ -46,7 +46,7 @@ get_header()
                         <!-- image -->
                     </div>
                     <div class="content-wrapper map">
-                        <!-- map -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6505149517143!2d8.450391216006912!3d55.46875902133027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21e03f334f17%3A0x64c76bb2fb9f8e03!2sOst%20ApS!5e0!3m2!1spl!2sdk!4v1606490268079!5m2!1spl!2sdk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <div class="content-wrapper graphic1">
                         <div class="olives-illu"></div>
@@ -58,7 +58,7 @@ get_header()
                         <div class="cheese-illu"></div>
                     </div>
                     <div class="content-wrapper address">
-                        <!-- map -->
+                        <img class="address-info" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/location-info.png" alt="">
                     </div>
                     <div class="content-wrapper image2">
                         <!-- image --> 

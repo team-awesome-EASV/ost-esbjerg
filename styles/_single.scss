@@ -1,3 +1,39 @@
 .single {
-  background-color: $light-blue;
+  &__post {
+    max-width: 800px;
+    margin: 3em auto 1em auto;
+    padding: 0 1em;
+
+    h1 {
+      margin: 0.5em 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    ul {
+      list-style-type: circle;
+      font-family: $family-cormorant-garamond;
+      margin-left: 2em;
+    }
+
+    table {
+      font-family: $family-cormorant-garamond;
+      width: 50%;
+      margin: 0.5em auto;
+    }
+
+    .wp-block-button {
+      font-family: $family-josefin-slab;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      a {
+        background-color: $logo-pink;
+        outline-color: $logo-pink;
+      }
+    }
+  }
 }

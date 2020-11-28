@@ -31,20 +31,26 @@
             <div class="product-info">
 
                 <section class="image">
-                    <h2>Tapas</h2>
-                    <div class="product-image">
-                        <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/tapas.jpg"
-                            alt="picture representing tapas plates, filled with cheese, salami, fruits, and seeds "
-                            title="tapas board">
-                    </div>
-                    <div class="tapas-price">
-                        <div>
-                            <p class="price">120</p>
-                            <p class="currency">DKK</p>
-                            <p class="extra-info">Per person</p>
+                    <div class="product-image-container">
+                        <h2>Tapas</h2>
+                        <div class="product-image">
+                            <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/tapas.jpg"
+                                alt="picture representing tapas plates, filled with cheese, salami, fruits, and seeds "
+                                title="tapas board">
+                        </div>
+                        <div class="tapas-price">
+                            <div>
+                                <p class="price">120</p>
+                                <p class="currency">DKK</p>
+                                <p class="extra-info">Per person</p>
+                            </div>
                         </div>
                     </div>
+
+
+
                 </section>
+
                 <section class="tapas-product-text">
                     <div class="product-text-container">
                         <h3>Tapas anretning</h3>
@@ -109,6 +115,7 @@
         </article>
         <div class="product-separator-container-olives">
         </div>
+
         <article id="pizzaKit">
             <div class="product-info">
                 <section class="image">
@@ -216,7 +223,7 @@
                 </section>
 
                 <div class="cheese-slice-line-ornament-container"></div>
-                \
+
             </div>
             <div class="about-section-one image-second">
 
@@ -241,4 +248,3 @@
     </div>
 
 </main>
-<?php get_footer()?>
