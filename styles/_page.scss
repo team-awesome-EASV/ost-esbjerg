@@ -144,21 +144,35 @@ button {
   margin-top: 4rem;
 }
 
+// third wrapper
+
 .video-section {
   width: 100%;
-  height: 100vh;
+  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1{
+    margin:1.5rem;
+  }
+}
+
+.insta-feed {
+  width:80%;
+  margin-right:3rem;
 }
 
 .location-section {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content-holder {
-  width: 70%;
+  width: 75%;
   height: 70vh;
   margin-right: 15vh;
 }
@@ -169,6 +183,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  h1{
+    display: none;
+  }
 }
 
 .content-wrapper {
@@ -235,7 +252,8 @@ button {
   }
 }
 
-.fa-phone, .fa-map-marker-alt {
+
+.contact-ico {
   font-size: 2.4rem;
   margin-right: 1rem;
 }
@@ -244,3 +262,161 @@ button {
   background-image: url("static-assets/ost-gift.png");
   background-size: cover;
 }
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .white-space{
+      height:10vh;
+    }
+
+    .home-page-section {
+      flex-direction: column-reverse;
+      height:150vh;
+    }
+
+    .right-wrapper {
+      width:100%;
+    }
+
+    .home-illu {
+      margin:2rem;
+      width:80%;
+    }
+
+    .olives-ornament {
+      right: 15%;
+      top: 1.3%;
+    }
+
+    .left-wrapper {
+      width: 100%;
+    }
+
+    .info-page-section {
+      height: 100vh;
+    }
+    
+    .cheese-illu-wrapper {
+      height: 200px;
+      width: 40%;
+      top:155vh;
+      left:45px;
+    }
+    
+    .circle-banner-1{
+      height: 180px;
+      width: 180px;
+      right:28vh;
+      top:200vh;
+    } 
+    
+    .circle-banner-2{
+      height: 140px;
+      width: 140px;
+      left:30vh;
+      top: 175vh;
+    } 
+    
+    
+    .info-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .text-container {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p {
+      text-align:center;
+    }
+
+    button {
+      font-size: 1rem;
+      border: 0.5rem $logo-pink solid;
+      z-index: 93;
+    }
+
+    .illu-container{
+      width: 80%;
+    }
+
+    .video-section {
+      h1{
+        margin:0.5rem;
+        margin-bottom:1rem;
+      }
+    }
+
+    .insta-feed {
+      margin:0;
+    }
+
+    .location-section{
+      height: 80vh;
+  
+    }
+
+    .content-holder{
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row {
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 5rem;
+      h1{
+        margin:2rem;
+      }
+    }
+
+    .mobile-switch {
+      display: none;
+    }
+
+    .content-wrapper {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .image1{
+      display: none;
+    }
+
+    .image2{
+      display: none;
+    }
+
+    .address{
+      display: none;
+    }
+
+    .text-holder {
+      display: none;
+    }
+
+    .graphic1{
+      display: none;
+    }
+
+    .graphic2{
+      display: none;
+    }
+    
+  }
