@@ -40,10 +40,7 @@
                         </div>
                         <div class="tapas-price">
                             <div>
-                                <?php if( get_field('tapas_price') ): ?>
-                                <p class="price"><?php the_field('tapas_price'); ?></p>
-                                <?php endif; ?>
-                                <!-- <p class="price">120</p> -->
+                                <p class="price">120</p>
                                 <p class="currency">DKK</p>
                                 <p class="extra-info">Per person</p>
                             </div>
@@ -56,17 +53,10 @@
 
                 <section class="tapas-product-text">
                     <div class="product-text-container">
-                        <?php if( get_field('tapas_title') ): ?>
-                        <h3><?php the_field('tapas_title'); ?></h3>
-                        <?php endif; ?>
-                        <!-- <h3>Tapas anretning</h3> -->
-                        <?php if( get_field('tapas_description') ): ?>
-                        <p><?php the_field('tapas_description'); ?></p>
-                        <?php endif; ?>
-
-                        <!-- <p>Vores lækre tapas anretning kan bestilles fra en person og op efter, nok til en hel måltid Du
+                        <h3>Tapas anretning</h3>
+                        <p>Vores lækre tapas anretning kan bestilles fra en person og op efter, nok til en hel måltid Du
                             får forskellige oste og charcuteri. Samt syltet grønt frugte. Vi tager også hensyn til
-                            allergi. Sig til når du bestiller. </p> -->
+                            allergi. Sig til når du bestiller. </p>
 
                     </div>
                     <div class="product-ingredients-list">
@@ -138,10 +128,7 @@
                         </div>
                         <div class="pizza-price">
                             <div>
-                                <?php if( get_field('pizza_price') ): ?>
-                                <p class="price"><?php the_field('pizza_price'); ?></p>
-                                <?php endif; ?>
-                                <!-- <p class="price">60</p> -->
+                                <p class="price">60</p>
                                 <p class="currency">DKK</p>
                                 <p class="extra-info">Per pizza kit</p>
                             </div>
@@ -151,18 +138,10 @@
                 </section>
                 <section class="pizza-product-text">
                     <div class="product-text-container">
-                        <?php if( get_field('pizza_title') ): ?>
-                        <h3><?php the_field('pizza_title'); ?></h3>
-                        <?php endif; ?>
-
-                        <?php if( get_field('pizza_description') ): ?>
-                        <p><?php the_field('pizza_description'); ?></p>
-                        <?php endif; ?>
-
-                        <!-- <h3>Pizza dage</h3> -->
-                        <!-- <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
+                        <h3>Pizza dage</h3>
+                        <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
                             Du køber en kit fra os, som du selv kan lave. Vi har instruktionelle videoer hernede.
-                            Gerne order fremadrettet, sådan så vi kan forberede din kit </p> -->
+                            Gerne ordr fremadrettet, sådan så vi kan forberede din kit </p>
 
                     </div>
                     <div class="product-ingredients-list">
@@ -215,18 +194,11 @@
             <div class="ost-text-info">
                 <div class="ost-text-container">
                     <div>
-
                         <div class="round-ornament"></div>
-                        <?php if( get_field('cheese_title') ): ?>
-                        <h2><?php the_field('cheese_title'); ?></h2>
-                        <?php endif; ?>
-                        <!-- <h2>Bred vifte af oste</h2> -->
-                        <?php if( get_field('cheese_intro_text') ): ?>
-                        <p><?php the_field('cheese_intro_text'); ?></p>
-                        <?php endif; ?>
-                        <!-- <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
+                        <h2>Bred vifte af oste</h2>
+                        <p>Vi sælger pizzakits to dage om ugen, Torsdag og Fredag.
                             Du køber en kit fra os, som du selv kan lave. Vi har instruktionelle videoer hernede.
-                            Gerne ordr fremadrettet, sådan så vi kan forberede din kit</p> -->
+                            Gerne ordr fremadrettet, sådan så vi kan forberede din kit</p>
                     </div>
                 </div>
 
@@ -244,16 +216,10 @@
                 <img src="<?php echo get_bloginfo( "template_directory"); ?>/static-assets/blue-cheese.jpg"
                     alt="Image of blue-cheese">
                 <section class="about-text-one">
-                    <?php if( get_field('about_cheese_first_paragraph_title') ): ?>
-                    <h3><?php the_field('about_cheese_first_paragraph_title'); ?></h3>
-                    <?php endif; ?>
-                    <!-- <h3>Lorem ipsum </h3> -->
-                    <?php if( get_field('about_cheese_first_paragraph_text') ): ?>
-                    <p><?php the_field('about_cheese_first_paragraph_text'); ?></p>
-                    <?php endif; ?>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam voluptatem illum eveniet
+                    <h3>Lorem ipsum </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam voluptatem illum eveniet
                         pariatur dolore, consectetur delectus illo ut. Quidem corporis explicabo officia possimus quae
-                        iure debitis voluptatem commodi eius!</p> -->
+                        iure debitis voluptatem commodi eius!</p>
                 </section>
 
                 <div class="cheese-slice-line-ornament-container"></div>
@@ -262,16 +228,10 @@
             <div class="about-section-one image-second">
 
                 <section class="about-text-one">
-                    <?php if( get_field('about_cheese_second_paragraph_title') ): ?>
-                    <h3><?php the_field('about_cheese_second_paragraph_title'); ?></h3>
-                    <?php endif; ?>
-                    <!-- <h3>Lorem ipsum </h3> -->
-                    <?php if( get_field('about_cheese_second_paragraph_text') ): ?>
-                    <p><?php the_field('about_cheese_second_paragraph_text'); ?></p>
-                    <?php endif; ?>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam voluptatem illum eveniet
+                    <h3>Lorem ipsum </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veniam voluptatem illum eveniet
                         pariatur dolore, consectetur delectus illo ut. Quidem corporis explicabo officia possimus quae
-                        iure debitis voluptatem commodi eius!</p> -->
+                        iure debitis voluptatem commodi eius!</p>
                 </section>
 
                 <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/cheese-three.jpg"
