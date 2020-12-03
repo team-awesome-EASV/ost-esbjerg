@@ -2749,7 +2749,8 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 20vh 0;
+    margin: 10vh 0;
+    height: auto;
   }
   .about .about-text-container .text-container {
     width: 100%;
@@ -2780,10 +2781,10 @@ button {
             transform: none;
   }
   .about .about-owner {
-    height: 80vh;
+    height: 100vh;
     display: block;
     position: relative;
-    margin-bottom: 80vh;
+    margin-bottom: 110vh;
   }
   .about .about-owner .text-wrapper {
     display: -webkit-box;
