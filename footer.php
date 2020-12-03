@@ -37,8 +37,12 @@
         </div>
     
         <div class="footer__container-logo">
-        <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/OSTLOGO.png" alt="">
+        <img class="ost-logo" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/OSTLOGO.png" alt="">
+        <a href="http://www.findsmiley.dk/950982" target="_blank" >
+        <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/Banner_gul_99x32.gif" alt="">
+        </a>
         </div>
+
     </div>
 
     <p>

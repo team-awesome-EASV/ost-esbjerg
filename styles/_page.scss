@@ -4,6 +4,10 @@
   height: 15vh;
 }
 
+#sbi_load {
+  font-family: 'josefin-slab', serif;
+}
+
 // first wrapper
 
 .container {
@@ -155,11 +159,15 @@ button {
   }
 }
 
+.video-size-contoll {
+  width: 80%;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  width:75%;
+  width: 100%;
 }
 .videoWrapper iframe {
   position: absolute;
@@ -360,19 +368,23 @@ button {
     }
   }
 
+  .video-size-contoll {
+    width: 90%;
+  }
+
   .videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  width:80%;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    width: 100%;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   .insta-feed {
     margin: 0;
@@ -438,7 +450,7 @@ button {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
   .white-space {
     height: 10vh;
   }

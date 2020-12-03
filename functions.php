@@ -3,20 +3,20 @@
 function ostPracticeResources()
 {
     wp_enqueue_style( 'fonts', 'https://use.typekit.net/wny5ldn.css');
-    wp_enqueue_style('style', get_stylesheet_uri(), [], time());
+    wp_enqueue_style('style', get_stylesheet_uri());
     
 }
 
 add_action('wp_enqueue_scripts', 'ostPracticeResources');
 
-function loadScripts() {
-    wp_enqueue_script( 'theme',  get_stylesheet_directory_uri() . '/scripts/theme.js',  [
-        'jquery',
+// function loadScripts() {
+//     wp_enqueue_script( 'theme',  get_stylesheet_directory_uri() . '/scripts/theme.js',  [
+//         'jquery',
         
-      ], time(), true );
-}
+//       ], time(), true );
+// }
 
-add_action( 'wp_enqueue_scripts', 'loadScripts' );
+// add_action( 'wp_enqueue_scripts', 'loadScripts' );
 
 //navigation menus
 
@@ -83,150 +83,146 @@ function setup_field_groups() {
             'active' => true,
             'description' => '',
         ));
-        
-        endif;
-
-        if( function_exists('acf_add_local_field_group') ):
-
-            acf_add_local_field_group(array(
-                'key' => 'group_5fc78e1f08cf6',
-                'title' => 'about',
-                'fields' => array(
-                    array(
-                        'key' => 'field_5fc78e2600d60',
-                        'label' => 'about text one title',
-                        'name' => 'about_text_one_title',
-                        'type' => 'text',
-                        'instructions' => 'enter a title for the first paragraph, 20 characters',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Part',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
+    
+        acf_add_local_field_group(array(
+            'key' => 'group_5fc78e1f08cf6',
+            'title' => 'about',
+            'fields' => array(
+                array(
+                    'key' => 'field_5fc78e2600d60',
+                    'label' => 'about text one title',
+                    'name' => 'about_text_one_title',
+                    'type' => 'text',
+                    'instructions' => 'enter a title for the first paragraph, 20 characters',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
                     ),
-                    array(
-                        'key' => 'field_5fc78eac00d61',
-                        'label' => 'about text one content',
-                        'name' => 'about_text_one_content',
-                        'type' => 'textarea',
-                        'instructions' => 'enter content for paragraph one',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
-                        'placeholder' => '',
-                        'maxlength' => '',
-                        'rows' => '',
-                        'new_lines' => '',
+                    'default_value' => 'Part',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_5fc78eac00d61',
+                    'label' => 'about text one content',
+                    'name' => 'about_text_one_content',
+                    'type' => 'textarea',
+                    'instructions' => 'enter content for paragraph one',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
                     ),
-                    array(
-                        'key' => 'field_5fc78f0500d62',
-                        'label' => 'about text two title',
-                        'name' => 'about_text_two_title',
-                        'type' => 'text',
-                        'instructions' => 'enter a title for the second paragraph, 20 characters',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Our cheese',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
+                    'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
+                    'placeholder' => '',
+                    'maxlength' => '',
+                    'rows' => '',
+                    'new_lines' => '',
+                ),
+                array(
+                    'key' => 'field_5fc78f0500d62',
+                    'label' => 'about text two title',
+                    'name' => 'about_text_two_title',
+                    'type' => 'text',
+                    'instructions' => 'enter a title for the second paragraph, 20 characters',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
                     ),
-                    array(
-                        'key' => 'field_5fc78f3700d63',
-                        'label' => 'about text two content',
-                        'name' => 'about_text_two_content',
-                        'type' => 'textarea',
-                        'instructions' => 'enter content for paragraph two',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
-                        'placeholder' => '',
-                        'maxlength' => '',
-                        'rows' => '',
-                        'new_lines' => '',
+                    'default_value' => 'Our cheese',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_5fc78f3700d63',
+                    'label' => 'about text two content',
+                    'name' => 'about_text_two_content',
+                    'type' => 'textarea',
+                    'instructions' => 'enter content for paragraph two',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
                     ),
-                    array(
-                        'key' => 'field_5fc78f8b00d64',
-                        'label' => 'about katherine title',
-                        'name' => 'about_katherine_title',
-                        'type' => 'text',
-                        'instructions' => 'enter a title for the second paragraph, 20 characters',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Katherine',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'maxlength' => '',
+                    'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
+                    'placeholder' => '',
+                    'maxlength' => '',
+                    'rows' => '',
+                    'new_lines' => '',
+                ),
+                array(
+                    'key' => 'field_5fc78f8b00d64',
+                    'label' => 'about katherine title',
+                    'name' => 'about_katherine_title',
+                    'type' => 'text',
+                    'instructions' => 'enter a title for the second paragraph, 20 characters',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
                     ),
+                    'default_value' => 'Katherine',
+                    'placeholder' => '',
+                    'prepend' => '',
+                    'append' => '',
+                    'maxlength' => '',
+                ),
+                array(
+                    'key' => 'field_5fc78fbf00d65',
+                    'label' => 'about katherine content',
+                    'name' => 'about_katherine_content',
+                    'type' => 'textarea',
+                    'instructions' => 'enter content for the paragraph about Katherine',
+                    'required' => 1,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
+                    'placeholder' => '',
+                    'maxlength' => '',
+                    'rows' => '',
+                    'new_lines' => '',
+                ),
+            ),
+            'location' => array(
+                array(
                     array(
-                        'key' => 'field_5fc78fbf00d65',
-                        'label' => 'about katherine content',
-                        'name' => 'about_katherine_content',
-                        'type' => 'textarea',
-                        'instructions' => 'enter content for the paragraph about Katherine',
-                        'required' => 1,
-                        'conditional_logic' => 0,
-                        'wrapper' => array(
-                            'width' => '',
-                            'class' => '',
-                            'id' => '',
-                        ),
-                        'default_value' => 'Man kan fremad se, at de har været udset til at læse, at der skal dannes par af ligheder. Dermed kan der afsluttes uden løse ender, og de kan optimeres fra oven af at formidles stort uden brug fra presse. I en kant af landet går der blandt om, at de vil sætte den over forbehold for tiden.',
-                        'placeholder' => '',
-                        'maxlength' => '',
-                        'rows' => '',
-                        'new_lines' => '',
+                        'param' => 'page',
+                        'operator' => '==',
+                        'value' => '12',
                     ),
                 ),
-                'location' => array(
-                    array(
-                        array(
-                            'param' => 'page',
-                            'operator' => '==',
-                            'value' => '12',
-                        ),
-                    ),
-                ),
-                'menu_order' => 0,
-                'position' => 'normal',
-                'style' => 'default',
-                'label_placement' => 'top',
-                'instruction_placement' => 'label',
-                'hide_on_screen' => '',
-                'active' => true,
-                'description' => '',
-            ));
+            ),
+            'menu_order' => 0,
+            'position' => 'normal',
+            'style' => 'default',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => '',
+            'active' => true,
+            'description' => '',
+        ));
 
-            acf_add_local_field_group(array(
+        acf_add_local_field_group(array(
                 'key' => 'group_5fc72ff08b8a6',
                 'title' => 'products',
                 'fields' => array(
@@ -476,7 +472,49 @@ function setup_field_groups() {
                 'hide_on_screen' => '',
                 'active' => true,
                 'description' => '',
-));
+        ));
+
+        acf_add_local_field_group(array(
+            'key' => 'group_5fc8dff2a2558',
+            'title' => 'video',
+            'fields' => array(
+                array(
+                    'key' => 'field_5fc8dff68a0d2',
+                    'label' => 'homepage video',
+                    'name' => 'homepage_video',
+                    'type' => 'url',
+                    'instructions' => 'paste url from youtube embed code',
+                    'required' => 0,
+                    'conditional_logic' => 0,
+                    'wrapper' => array(
+                        'width' => '',
+                        'class' => '',
+                        'id' => '',
+                    ),
+                    'default_value' => '',
+                    'placeholder' => '',
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'page',
+                        'operator' => '==',
+                        'value' => '57',
+                    ),
+                ),
+            ),
+            'menu_order' => 0,
+            'position' => 'normal',
+            'style' => 'default',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+            'hide_on_screen' => '',
+            'active' => true,
+            'description' => '',
+        ));
+        
+        
 
 endif;
 }

@@ -11,7 +11,7 @@ get_header()
 
             <div class="right-wrapper">
                 <div class="olives-ornament"><!-- olives ornament on the top set in css --></div> 
-                <img class="home-illu" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/svg/ost-home-illu.svg" alt="">
+                <img class="home-illu" src="<?php echo get_bloginfo( 'template_directory' ); ?>/static-assets/svg/ost-home-illu.svg" alt="Cheese illustration with text in danish: Esbjerg bedste ost og meget mere">
             </div>
         </div>
 
@@ -41,10 +41,16 @@ get_header()
 
         <div class="video-section">
     
-            <div class="videoWrapper">
-                <iframe src="https://www.youtube.com/embed/Vbg81kc56FU" frameborder="0"
-                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+           
+                <div class="video-size-contoll">
+                    <div class="videoWrapper">
+                        <iframe src="  <?php if( get_field('homepage_video') ): ?>
+                        <?php the_field('homepage_video'); ?>
+                        <?php endif; ?>" frameborder="0"
+                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+           
 
             <div class="white-space"></div>
             

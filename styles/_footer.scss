@@ -21,9 +21,14 @@
 
   &__container-logo {
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    img {
+    .ost-logo {
       width: 100%;
+      margin-bottom: 1em;
     }
   }
 
@@ -70,7 +75,7 @@
       width: 100%;
       margin: 1em 0;
 
-      img {
+      .ost-logo {
         width: 50%;
       }
     }
@@ -94,13 +99,12 @@
       width: 100%;
       margin: 1em 0;
 
-      img {
+      .ost-logo {
         width: 50%;
         height: 100%;
       }
     }
   }
-  
 
   .footer__section {
     align-items: center;
