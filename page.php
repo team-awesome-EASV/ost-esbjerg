@@ -7,7 +7,7 @@ get_header()
         <div class="home-page-section">
             <div class="left-wrapper">
                  <!-- image set in scss--> 
-                 <?php echo do_shortcode('[wonderplugin_slider id=4]'); ?>
+                 <?php echo do_shortcode('[wonderplugin_slider id=1]'); ?>
             </div>
 
             <div class="right-wrapper">

@@ -141,7 +141,9 @@
                         </div>
                         <div class="pizza-price">
                             <div>
-                                <p class="price">60</p>
+                            <?php if( get_field('pizza_price') ): ?>
+                                <p class="price"><?php the_field('pizza_price'); ?></p>
+                                <?php endif; ?>
                                 <p class="currency">DKK</p>
                                 <p class="extra-info">Per pizza kit</p>
                             </div>
