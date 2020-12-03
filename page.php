@@ -40,8 +40,15 @@ get_header()
         <div class="white-space"></div>
 
         <div class="video-section">
-            <h1>Tjek vores instagram !</h1>
+    
+            <div class="videoWrapper">
+                <iframe src="https://www.youtube.com/embed/Vbg81kc56FU" frameborder="0"
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="white-space"></div>
             
+            <h1>Tjek vores instagram !</h1>
             <?php
                 if (have_posts()):
                     while (have_posts()): the_post();?>
