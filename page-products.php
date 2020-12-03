@@ -104,6 +104,7 @@
 
                     <div class="contact-info">
                         <p>Place din order her</p>
+                        <a href="tel:+4575122057">
                         <button class="contact-phone" title="call 004575122057 to place your order">
                             <div></div>
                             <p class="phone-number">
@@ -116,6 +117,7 @@
                                 <span>57</span>
                             </p>
                         </button>
+                        </a>
                     </div>
 
                 </section>
@@ -188,6 +190,7 @@
                     </div>
                     <div class="contact-info">
                         <p>Place din order her</p>
+                        <a href="tel:+4575122057">
                         <button class="contact-phone" title="call 004575122057 to place your order">
                             <div></div>
                             <p class="phone-number">
@@ -200,6 +203,7 @@
                                 <span>57</span>
                             </p>
                         </button>
+                        </a>
                     </div>
                 </section>
             </div>
