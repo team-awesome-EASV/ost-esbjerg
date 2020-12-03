@@ -32,7 +32,7 @@
                         </div>
                     </div>
             </nav>
-            <a href="<?php get_template_directory_uri(  ); ?>/ost#map">
+            <a href="<?php echo get_site_url()."/#map";?>">
                 <div class="find-us-wrapper">
                     <div class="marquee">
                         <span class="find-us-banner marquee__item">FIND US</span>
