@@ -576,7 +576,7 @@ function setup_field_groups() {
                     array(
                         'param' => 'page',
                         'operator' => '==',
-                        'value' => '80',
+                        'value' => '57',
                     ),
                 ),
             ),
