@@ -501,11 +501,11 @@
 				.product-image-container {
 					width: 80%;
 				}
-				image {
+				.image {
 					.product-image {
 						img {
-							width: auto;
-							max-height: 80vh;
+							width: 100%;
+							max-height: inherit;
 						}
 					}
 				}
@@ -653,7 +653,10 @@
 			bottom: -5%;
 		}
 		.invite {
-			margin-top: 15vh;
+			margin-top: 30vh;
+			h2 {
+				font-size: 4rem;
+			}
 		}
 	}
 }
