@@ -467,9 +467,8 @@
 		}
 	}
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1024px) {
 	.products {
-		padding-right: 8%;
 		.hero {
 			display: none;
 		}
@@ -482,25 +481,51 @@
 		.product-text-container {
 			margin: 5vh 0;
 		}
+		.product-ingredients-list {
+			margin-top: 5vh;
+			ul {
+				padding-left: 0;
+				li {
+					p {
+						text-align: left;
+						font-size: 2rem;
+					}
+				}
+			}
+		}
 		#tapas {
-			width: 90%;
-			margin: 0 auto;
+			width: 100%;
+			margin: 0 auto 0 0;
 			.product-info {
 				flex-direction: column;
+				.product-image-container {
+					width: 80%;
+				}
+				image {
+					.product-image {
+						img {
+							width: auto;
+							max-height: 80vh;
+						}
+					}
+				}
+
 				.tapas-product-text {
-					padding-left: 0;
-					margin-top: 10vh;
+					padding: 10vw;
+					margin-top: 5vh;
+					text-align: center;
 					p {
-						width: 90%;
+						width: 100%;
 					}
 					.product-ingredients-list {
 						padding-bottom: 25vw;
-						margin: 5rem 0;
+						margin: 5vh 0;
 					}
 					.tapas-line-ornament {
 						width: 100%;
-						max-height: 40vw;
+						max-height: 30vw;
 						height: 40vw;
+						background-position: right;
 						right: 0;
 						bottom: 0;
 					}
@@ -508,7 +533,7 @@
 			}
 		}
 		#pizzaKit {
-			margin-top: 20vh;
+			margin-top: 10vh;
 			.product-info {
 				flex-direction: column;
 				.pizza-line-ornament {
@@ -535,11 +560,11 @@
 					}
 				}
 				.pizza-product-text {
-					margin-top: 30vw;
-					padding-left: 0;
-
+					padding: 10vw;
+					margin-top: 15vh;
+					text-align: center;
 					p {
-						width: 90%;
+						width: 100%;
 					}
 				}
 			}
@@ -554,9 +579,22 @@
 			.ost-text-info {
 				position: static;
 				width: 100%;
-				padding-left: 3rem;
+				padding-left: 10vw;
 				.ost-text-container {
+					.round-ornament {
+						height: 25vh;
+						width: 25vh;
+						top: -20%;
+					}
 					width: 90%;
+					h2 {
+						font-size: 3rem;
+						margin-bottom: 1rem;
+					}
+					p {
+						font-size: 1.5rem;
+						text-align: left;
+					}
 				}
 			}
 			.image-container {
@@ -580,6 +618,7 @@
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				position: relative;
 
 				img {
 					width: 90%;
@@ -587,6 +626,13 @@
 				.about-text-one {
 					order: -1;
 					padding: 10vw 0;
+					text-align: center;
+					h3 {
+						font-size: 2.5rem;
+					}
+					p {
+						font-size: 1.5rem;
+					}
 				}
 			}
 			.image-second {
@@ -596,9 +642,9 @@
 			}
 		}
 		.cheese-slice-line-ornament-container {
-			width: 80%;
-			right: 0;
-			left: 0;
+			right: -50%;
+			top: 0;
+			background-position: right;
 		}
 		.multiple-line-ornament-container {
 			width: 100%;
@@ -632,18 +678,21 @@
 				font-size: 3rem;
 			}
 		}
+
 		.product-ingredients-list {
 			margin-top: 10vh;
 			ul {
-				padding-left: 15vw;
+				padding-left: 0;
 				li {
 					p {
 						text-align: left;
+						font-size: 1.2rem;
 					}
 				}
 			}
 		}
 		#pizzaKit {
+			width: 100%;
 			.product-info {
 				.image {
 					.product-image-container {
@@ -663,10 +712,10 @@
 				}
 				.pizza-product-text {
 					margin-top: 60vw;
-					padding-left: 0;
+					padding-left: 10vw;
 
 					p {
-						width: 90%;
+						width: 100%;
 					}
 				}
 			}
@@ -675,21 +724,41 @@
 			.ost-text-info {
 				position: static;
 				width: 100%;
-				padding-left: 3rem;
+				padding-left: 10vw;
 				.ost-text-container {
 					width: 90%;
 					h2 {
 						font-size: 2rem;
-						margin-top: 60%;
+						text-align: left;
+						margin-top: 20%;
 						margin-bottom: 1rem;
+					}
+					p {
+						font-size: 1.2rem;
 					}
 				}
 			}
 			.image-container {
-				margin-top: 30vh;
+				margin-top: 10vh;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+			}
+			.about-section-one {
+				img {
+					width: 90%;
+				}
+				.about-text-one {
+					order: -1;
+					padding: 10vw 0;
+					text-align: center;
+					h3 {
+						font-size: 2rem;
+					}
+					p {
+						font-size: 1.2rem;
+					}
+				}
 			}
 		}
 	}
