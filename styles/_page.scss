@@ -177,6 +177,14 @@ button {
   height: 100%;
 }
 
+.insta__header {
+  h2 {
+    color: $logo-red;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+}
+
 .insta-feed {
   width: 80%;
   margin-right: 3rem;
@@ -514,10 +522,6 @@ button {
   }
 
   h1 {
-    font-size: 2rem;
-  }
-
-  .insta__header {
     font-size: 2rem;
   }
 

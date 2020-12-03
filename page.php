@@ -54,9 +54,11 @@ get_header()
            
 
             <div class="white-space"></div>
-            <?php if( get_field('homepage_instagram_header') ): ?>
-                        <h2><?php the_field('homepage_instagram_header'); ?></h2>
-                        <?php endif; ?>
+            <div class="insta__header">
+                <?php if( get_field('homepage_instagram_header') ): ?>
+                            <h2><?php the_field('homepage_instagram_header'); ?></h2>
+                            <?php endif; ?>
+            </div>
             
            
 
@@ -64,8 +66,8 @@ get_header()
                 if (have_posts()):
                     while (have_posts()): the_post();?>
                 <article class="insta-feed">
-                    <h2><a href="<?php the_permalink()?>"> <?php the_title()?></a> </h2>
-                    <p><?php the_content()?></p>
+                    
+                <?php the_content()?>
                 </article>
 
                 <?php endwhile;
@@ -77,15 +79,15 @@ get_header()
 
         <div class="white-space"></div>
 
-        <div class="location-section">
+        <div class="location-section" id="map">
             <div class="content-holder">
                 <div class="row">
                     <div class="content-wrapper image1">
                          <!-- image set in scss--> 
                     </div>
                     <h1>Find os!</h1>
-                    <div class="content-wrapper map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.6505149517143!2d8.450391216006912!3d55.46875902133027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21e03f334f17%3A0x64c76bb2fb9f8e03!2sOst%20ApS!5e0!3m2!1spl!2sdk!4v1606490268079!5m2!1spl!2sdk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="content-wrapper map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.650514951719!2d8.450391216037959!3d55.46875902133019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b21e03f334f17%3A0x64c76bb2fb9f8e03!2sOst%20ApS!5e0!3m2!1sda!2sdk!4v1607012136056!5m2!1sda!2sdk" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <div class="content-wrapper graphic1">
                         <div class="olives-illu"></div>
