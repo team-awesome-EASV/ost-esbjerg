@@ -187,6 +187,7 @@ $speed: 10s;
     position: fixed;
     z-index: 98;
     top: 0;
+    display:none;
 
     .menu-item a {
       font-family: $family-josefin-slab;
@@ -291,6 +292,7 @@ $speed: 10s;
     position: fixed;
     z-index: 98;
     top: 0;
+    display:none;
 
     .menu-item a {
       font-family: $family-josefin-slab;
