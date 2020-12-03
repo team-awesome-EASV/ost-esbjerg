@@ -187,7 +187,6 @@ $speed: 10s;
     position: fixed;
     z-index: 98;
     top: 0;
-    display:none;
 
     .menu-item a {
       font-family: $family-josefin-slab;
@@ -238,6 +237,7 @@ $speed: 10s;
     list-style: none;
     margin: 0;
     padding: 0;
+     display: none;
   }
 
   #menu-item-39,
@@ -292,7 +292,6 @@ $speed: 10s;
     position: fixed;
     z-index: 98;
     top: 0;
-    display:none;
 
     .menu-item a {
       font-family: $family-josefin-slab;
@@ -340,6 +339,8 @@ $speed: 10s;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none;
+    text-align:center;
   }
 
   #menu-item-39,

@@ -19,8 +19,8 @@
                     <a class="toggle-nav-icon" href="#">&#9776;</a>
                 </nav>
             </header>
-            <nav class="mobile-menu">
-                    <div class="mobile-nav-container">
+            <nav class="mobile-menu" style="display:none;">
+                    <div class="mobile-nav-container" >
                         <?php wp_nav_menu(array("theme_location" => "mobile_menu"))?>
                         <div class="social-icons-mobile">
                         <a href="https://www.instagram.com/ost.esbjerg/">
