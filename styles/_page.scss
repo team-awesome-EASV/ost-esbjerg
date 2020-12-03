@@ -263,6 +263,160 @@ button {
   background-size: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+  .white-space{
+      height:10vh;
+    }
+
+    .home-page-section {
+      flex-direction: column-reverse;
+      height:150vh;
+    }
+
+    .right-wrapper {
+      width:100%;
+    }
+
+    .home-illu {
+      margin:2rem;
+      width:80%;
+    }
+
+    .olives-ornament {
+      right: 15%;
+      top: 0%;
+    }
+
+    .left-wrapper {
+      width: 100%;
+    }
+
+    .info-page-section {
+      height: 70vh;
+    }
+    
+    .cheese-illu-wrapper {
+      height: 300px;
+      width: 50%;
+      top:155vh;
+      left:45px;
+    }
+    
+    .circle-banner-1{
+      height: 300px;
+      width: 300px;
+      right:50vh;
+      top:190vh;
+    } 
+    
+    .circle-banner-2{
+      height: 170px;
+      width: 170px;
+      left:55vh;
+      top: 183vh;
+    } 
+    
+    
+    .info-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .text-container {
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+    }
+    
+    p {
+      text-align:center;
+      font-size: 2rem;
+    }
+
+    button {
+      font-size: 2rem;
+    }
+
+    .illu-container{
+      width: 80%;
+    }
+
+    .video-section {
+      h1{
+        margin:0.5rem;
+        margin-top:10rem;
+      }
+    }
+
+    .insta-feed {
+      margin:0;
+      width:92%;
+    }
+
+    .location-section{
+      height: 80vh;
+  
+    }
+
+    .content-holder{
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .row {
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 5rem;
+      h1{
+        margin:3rem;
+        display:block;
+      }
+    }
+
+    .mobile-switch {
+      display: none;
+    }
+
+    .content-wrapper {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .image1{
+      display: none;
+    }
+
+    .image2{
+      display: none;
+    }
+
+    .address{
+      display: none;
+    }
+
+    .text-holder {
+      display: none;
+    }
+
+    .graphic1{
+      display: none;
+    }
+
+    .graphic2{
+      display: none;
+    }
+}
+
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -289,7 +443,7 @@ button {
 
     .olives-ornament {
       right: 15%;
-      top: 1.3%;
+      top: 0.8%;
     }
 
     .left-wrapper {

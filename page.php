@@ -37,7 +37,7 @@ get_header()
             </div>
         </div>
 
-
+        <div class="white-space"></div>
 
         <div class="video-section">
             <h1>Tjek vores instagram !</h1>

@@ -164,7 +164,117 @@ $speed: 10s;
     100% { transform: translateY(-100%); }
 }
 
-// Media queries
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    #wpadminbar { display:none !important;}
+
+      .site-header {
+        top:0;
+      }
+
+    nav .mobile-menu{
+      width:100vh;
+      height:100vh;
+      background-color: red;
+      display: inline-block;
+    }
+
+    .mobile-nav-container{
+      width:100%;
+      height:100vh;
+      background-color: $light-blue;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      position:fixed;
+      z-index: 98;
+      top:0;
+    }
+
+    .nav-logo {
+      height:3.5rem;
+      margin-left:1vh;
+      z-index: 30;
+      margin:1rem !important;
+      margin-top:2.5rem !important;
+    }
+
+    .site-nav {
+      height: 3.5rem;
+      width: 95%;
+    } 
+
+    .toggle-nav-icon {
+      display: inline-block;
+      font-size: 3rem;
+      transition: color linear 0.15s;
+      background-color: $background-color;
+      border: 4px $background-color solid;
+      border-radius: 8px;
+      z-index: 80;
+      margin-top:2.5rem !important;
+    }
+
+    .nav-menu{
+      display: none;
+    }
+
+    .menu-mobile-menu-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+       padding: 0;
+    }
+
+     #menu-mobile-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu-item-39, #menu-item-40,  #menu-item-41, #menu-item-42 {
+      margin:2rem;
+    }
+
+    .menu-item a {
+      font-family: $family-josefin-slab;
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+
+    .find-us-wrapper {
+      display: none;
+    }
+
+    .social-icons-mobile {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      width: 20vh;
+      height: 9vh;
+      margin-left:1rem;
+    }
+
+    .social-icons{
+      display:none;
+    }
+
+    .fab {
+      font-size: 3.5rem;
+      margin: 1rem;
+      color: $logo-pink;
+    }
+}
+
+
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -258,18 +368,13 @@ $speed: 10s;
     .social-icons-mobile {
       position: absolute;
       bottom: 0;
+      display:flex;
+      align-items:flex-end;
       left: 0;
       position: fixed;
       width: 20vh;
-      height: 10vh;
+      height: 7vh;
       margin-left:1rem;
-    }
-
-    .social-icons {
-      display: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .social-icons{
@@ -278,7 +383,6 @@ $speed: 10s;
 
     .fab {
       font-size: 2.3rem;
-      margin: 0.5rem;
       color: $logo-pink;
     }
 
