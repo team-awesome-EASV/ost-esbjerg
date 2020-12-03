@@ -100,7 +100,7 @@
   right: 0;
   position: absolute;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   // transform: translate(171vh,-4vh);
 }
 
@@ -278,7 +278,7 @@ $speed: 10s;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   #wpadminbar {
     display: none !important;
   }

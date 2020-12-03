@@ -196,10 +196,12 @@
   border: dotted medium $yellow-dark;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .news {
     &__hero {
       flex-direction: column;
+      position: relative;
+      z-index: 3;
 
       &__picture {
         width: 100%;
@@ -266,3 +268,14 @@
     flex-direction: column;
   }
 }
+
+// @media (min-widht: 1025px) and (max-widht: 1200px) {
+//   .news {
+//     padding-right: 8%;
+//   }
+// }
+// @media (min-widht: 200px) and (max-widht: 1024px) {
+//   .news {
+//     padding-right: 0;
+//   }
+// }
