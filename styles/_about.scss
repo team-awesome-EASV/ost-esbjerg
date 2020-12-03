@@ -184,7 +184,8 @@
 		}
 		.about-text-container {
 			flex-direction: column;
-			margin: 20vh 0;
+			margin: 10vh 0;
+			height: auto;
 
 			.text-container {
 				width: 100%;
@@ -214,10 +215,10 @@
 			}
 		}
 		.about-owner {
-			height: 80vh;
+			height: 100vh;
 			display: block;
 			position: relative;
-			margin-bottom: 80vh;
+			margin-bottom: 110vh;
 
 			.text-wrapper {
 				display: flex;
