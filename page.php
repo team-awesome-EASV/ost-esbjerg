@@ -23,15 +23,16 @@ get_header()
             <div class="circle-banner-2"></div>
             <div class="info-container">
                 <div class="text-container">
-                    <h1>Lorem ipsum</h1>
-                    <p>
-                       Man kan fremad se, at de har været udset til at læse,
-                       at der skal dannes par af ligheder. Dermed kan der afsluttes
-                       uden løse ender, og de kan optimeres fra oven af at formidles stort
-                       uden brug fra presse. I en kant af landet går der blandt om, at de
-                       vil sætte den over forbehold for tiden. 
-                    </p>
-                    <button>Check it out!</button>
+                <?php if( get_field('homepage_header') ): ?>
+                       <h1> <?php the_field('homepage_header'); ?></h1>
+                        <?php endif; ?>
+                    
+                        <?php if( get_field('homepage_products_p') ): ?>
+                       <p> <?php the_field('homepage_products_p'); ?></p>
+                        <?php endif; ?>
+                    <a href="<?php echo get_bloginfo( 'template_directory' ); ?>/products" class="home__button__cta"><button><?php if( get_field('homepage_products_button_txt') ): ?>
+                        <?php the_field('homepage_products_button_txt'); ?>
+                        <?php endif; ?></button></a>
                 </div>
                 <div class="illu-container">  <!-- fine dining illu set in scss --> </div>
             </div>
@@ -53,8 +54,12 @@ get_header()
            
 
             <div class="white-space"></div>
+            <?php if( get_field('homepage_instagram_header') ): ?>
+                        <h2><?php the_field('homepage_instagram_header'); ?></h2>
+                        <?php endif; ?>
             
-            <h1>Tjek vores instagram !</h1>
+           
+
             <?php
                 if (have_posts()):
                     while (have_posts()): the_post();?>

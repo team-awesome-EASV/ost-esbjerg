@@ -1132,12 +1132,14 @@ button {
   h1 {
     font-size: 2rem;
   }
+  .insta__header {
+    font-size: 2rem;
+  }
   p {
     text-align: center;
   }
-  button {
+  .home__button__cta {
     font-size: 1rem;
-    border: 0.5rem #ca7482 solid;
     z-index: 93;
   }
   .illu-container {
