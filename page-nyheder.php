@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-    <h1>lolo</h1>
-    
+<h1>lolo</h1>
+
 <?php
 if (have_posts()):
     while (have_posts()): the_post();?>
@@ -15,6 +15,6 @@ else:
     echo '<p>No content found</p>';
 endif;
 ?>
-   
+
 
 <?php get_footer()?>
